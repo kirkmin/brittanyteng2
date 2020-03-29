@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
 
 const Home = props => {
+  const setBackground = props.setMainBackground;
+
   useEffect(() => {
-    props.setMainBackground('green');
-  }, []);
+    setBackground('green');
+  }, [setBackground]);
 
   return (
     <div>
