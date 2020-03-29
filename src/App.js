@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Route, Redirect, BrowserRouter, Switch } from 'react-router-dom';
 
-import FirstPage from './containers/FirstPage';
-import SecondPage from './containers/SecondPage';
+import Header from './components/Header/Header';
+import Home from './containers/Home/Home';
+import Info from './containers/Info/Info';
 
 class App extends Component {
   render () {
     return (
-        <div>
-          <div>
-            <Link to="/">FirstPage</Link> | <Link to="second">SecondPage</Link>
-          </div>
-          <div>
-            <Route path="/" exact component={FirstPage} />
-            <Route path="/second" component={SecondPage} />
-          </div>
-        </div>
+      <div>
+        <BrowserRouter>
+          <Header />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/info" component={Info} />
+            <Redirect to="/" />
+          </Switch>
+        </BrowserRouter>
+      </div>
     );
   }
 }
