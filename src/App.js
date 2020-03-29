@@ -1,23 +1,24 @@
 import React, { Component } from 'react';
 import { Route, Redirect, BrowserRouter, Switch } from 'react-router-dom';
 
-import Header from './components/Header/Header';
+import Layout from './hoc/Layout/Layout';
 import Home from './containers/Home/Home';
 import Info from './containers/Info/Info';
 
 class App extends Component {
   render () {
     return (
-      <div>
-        <BrowserRouter>
-          <Header />
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/info" component={Info} />
-            <Redirect to="/" />
-          </Switch>
-        </BrowserRouter>
-      </div>
+      <BrowserRouter>
+        <Layout>
+          {(setMainBackground)  => (
+            <Switch>
+              <Route path="/" exact render={(props) => <Home {...props} setMainBackground={setMainBackground} />} />
+              <Route path="/info" render={(props) => <Info {...props} setMainBackground={setMainBackground} />} />
+              <Redirect to="/" />
+            </Switch>
+          )}
+        </Layout>
+      </BrowserRouter>
     );
   }
 }

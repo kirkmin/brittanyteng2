@@ -34,15 +34,19 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label {
 }
 
 body {
-  font-family: "Favorit Regular", sans-serif;
+  font-family: "FaktPro", sans-serif;
 }
 
-/*@font-face {*/
-/*  font-family: "Favorit Regular";*/
-/*  src: url("./assets/fonts/Favorit-Regular.woff") format("woff");*/
-/*}*/
+#root {
+  overflow: auto;
+}
 
-/*@font-face {*/
-/*  font-family: "Spectral Light";*/
-/*  src: url("./assets/fonts/Spectral-Light.ttf") format("truetype");*/
-/*}*/
+@font-face {
+  font-family: "FaktPro";
+  src: url("./assets/fonts/FaktPro-Normal.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "FaktPro-Italic";
+  src: url("./assets/fonts/FaktPro-NormalItalic.otf") format("opentype");
+}
