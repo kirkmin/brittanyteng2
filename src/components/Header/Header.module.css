@@ -1,0 +1,43 @@
+.header {
+    position: relative;
+    padding: 4.3% 3.2% 4.3% 4.3%;
+    display: flex;
+    justify-content: space-between;
+    height: 43px;
+}
+
+.header_link {
+    display: block;
+    height: 100%;
+    font-family: Helvetica;
+    font-size: 34px;
+    text-decoration: none;
+    color: #0E0E0E;
+    letter-spacing: -0.7px;
+}
+
+.header_link_circled {
+    display: inline-flex;
+    justify-content: center;
+    height: 100%;
+    border-radius: 38px;
+    border: solid 3px #0E0E0E;
+    min-width: 43px;
+    box-sizing: border-box;
+    padding: 0 8px;
+}
+
+.circled--teng {
+    padding: 0 11px;
+    margin-left: -3px;
+}
+
+.circled--info {
+    padding: 0 28px 0 31px;
+}
+
+.header_icon-container {
+    display: block;
+    width: 43px;
+    height: 100%;
+}
