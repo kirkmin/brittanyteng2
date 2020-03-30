@@ -1,3 +1,76 @@
 .pages__container {
+    padding: 2px 4.2% 0;
     display: flex;
+    flex-direction: column;
+}
+
+.pages__text {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+    letter-spacing: -0.36px;
+    color: #0E0E0E;
+    margin-bottom: 22px;
+}
+
+.text--title {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+    margin: -1px 0 3px;
+}
+
+.text--more-margin-bottom {
+    margin-bottom: 30px;
+}
+
+.pages__text__italic {
+    font-family: "FaktPro-Italic";
+}
+
+.container--mobile {
+    display: block;
+}
+
+.container--desktop {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .pages__container {
+        padding: 30px 3.2%;
+    }
+
+    .pages__text {
+        order: -1;
+        font-size: 40px;
+        line-height: 45px;
+        letter-spacing: -0.8px;
+        margin-bottom: 45px;
+    }
+
+    .text--title {
+        font-size: 70px;
+        line-height: 55px;
+        letter-spacing: -1.4px;
+        margin-bottom: 0;
+    }
+
+    .container--mobile {
+        display: none;
+    }
+
+    .container--desktop {
+        display: flex;
+        order: -1;
+        margin: 32px -3.2% 6px 0;
+    }
+
+    .pages__text__column {
+        flex: 1 1 50%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 3.2%;
+        justify-content: space-between;
+    }
 }

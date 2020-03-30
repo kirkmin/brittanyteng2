@@ -1,13 +1,26 @@
 .img__wrapper {
      flex: 1 1 100%;
+    margin-bottom: 4px;
  }
+
+.img {
+    width: 100%;
+}
 
 @media only screen and (min-width: 768px) {
     .img__wrapper {
-        flex: 1 1 33%;
+        margin-bottom: 18px;
     }
 
-    .wrapper--large {
+    .wrapper--right {
         flex: 1 1 66%;
+        width: 66%;
+        align-self: flex-end;
+    }
+
+    .wrapper--left {
+        flex: 1 1 66%;
+        width: 66%;
+        align-self: flex-start;
     }
 }

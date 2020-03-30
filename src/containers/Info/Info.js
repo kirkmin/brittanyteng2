@@ -18,7 +18,7 @@ const Info = props => {
         Email her at hi@brittanyteng.com
       </h2>
       <h2 className={styles["info__text"]}>
-        Connect with her on <a className={styles["info__text__link"]} href="https://www.linkedin.com/in/brittanyteng/" target="_blank">LinkedIn</a>
+        Connect with her on <a className={styles["info__text__link"]} href="https://www.linkedin.com/in/brittanyteng/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </h2>
     </div>
   );
