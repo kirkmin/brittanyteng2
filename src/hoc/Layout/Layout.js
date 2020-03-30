@@ -10,7 +10,7 @@ const Layout = (props) => {
 
   return (
     <main className={[styles.main, styles['main--' + mainBackground]].join(' ')}>
-      <Header />
+      <Header background={mainBackground} />
       {props.children(setMainBackground)}
     </main>
   );

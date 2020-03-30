@@ -6,6 +6,24 @@
     height: 36px;
 }
 
+.header--white .header__link:hover .header__link__content {
+    border-color: #53FF8B;
+    color: #53FF8B;
+}
+
+.header--green .header__link:hover .header__link__content {
+    border-color: #FAFAFA;
+    color: #FAFAFA;
+}
+
+.header--white .header__icon-container:hover svg g {
+    stroke: #53FF8B;
+}
+
+.header--green .header__icon-container:hover svg g {
+    stroke: #FAFAFA;
+}
+
 .header__link__container {
     display: block;
     height: 100%;
@@ -14,6 +32,10 @@
 }
 
 .header__link {
+    text-decoration: none;
+}
+
+.header__link__content {
     display: inline-flex;
     justify-content: center;
     height: 100%;
@@ -25,16 +47,15 @@
     box-sizing: border-box;
     padding: 0 8px;
     color: #0E0E0E;
-    text-decoration: none;
     overflow: hidden;
 }
 
-.link--teng {
+.content--teng {
     padding: 0 11px;
     margin-left: -2px;
 }
 
-.link--info {
+.content--info {
     padding: 0 28px 0 31px;
 }
 
@@ -50,7 +71,7 @@
         padding: 17px 3.2% 17px 4.3%;
     }
 
-    .header__link {
+    .header__link__content {
         font-size: 35px;
         line-height: 45px;
         border: solid 3px #0E0E0E;
@@ -58,12 +79,12 @@
         min-width: 43px;
     }
 
-    .link--teng {
+    .content--teng {
         padding: 0 11px;
         margin-left: -2px;
     }
 
-    .link--info {
+    .content--info {
         padding: 0 28px 0 31px;
     }
 
@@ -88,7 +109,7 @@
         flex: 1 1 60%;
     }
 
-    .header__link {
+    .header__link__content {
         font-size: 50px;
         line-height: 65px;
         letter-spacing: -1px;
@@ -97,12 +118,12 @@
         min-width: 62px;
     }
 
-    .link--teng {
+    .content--teng {
         padding: 0 15px 0 17px;
         margin-left: -4px;
     }
 
-    .link--info {
+    .content--info {
         padding: 0 38px 0 39px;
     }
 
