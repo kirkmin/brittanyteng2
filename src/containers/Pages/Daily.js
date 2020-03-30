@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import ImgWrapper from '../../components/UI/ImgWrapper/ImgWrapper';
 
 import styles from './Pages.module.css';
-import Daily_0 from "../../assets/images/Daily/Daily_0.jpg";
+import Daily_0 from "../../assets/images/Daily/Daily_0.png";
 import Daily_1 from "../../assets/images/Daily/Daily_1.gif";
 import Daily_2 from "../../assets/images/Daily/Daily_2.jpg";
 import Daily_3 from "../../assets/images/Daily/Daily_3.jpg";
@@ -17,6 +17,7 @@ const Daily = props => {
 
   useEffect(() => {
     setBackground('white');
+    window.scrollTo(0, 0);
   }, [setBackground]);
 
   return (

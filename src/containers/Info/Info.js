@@ -7,6 +7,7 @@ const Info = props => {
 
   useEffect(() => {
     setBackground('green');
+    window.scrollTo(0, 0);
   }, [setBackground]);
 
   return (

@@ -9,7 +9,8 @@ const ImgWrapper = (props) => {
   const classes = cx({
     "img__wrapper": true,
     "wrapper--right": props.right,
-    "wrapper--left": props.left
+    "wrapper--left": props.left,
+    "wrapper--desktop-only": props.desktopOnly
   });
 
   let Wrapper = (

@@ -15,6 +15,7 @@ const Transcendent = props => {
 
   useEffect(() => {
     setBackground('white');
+    window.scrollTo(0, 0);
   }, [setBackground]);
 
   return (
