@@ -12,11 +12,22 @@ const ImgWrapper = (props) => {
     "wrapper--left": props.left
   });
 
-  return (
+  let Wrapper = (
     <div className={classes}>
       <img className={styles.img} src={props.src} alt="" />
     </div>
   );
+  if (props.mp4 || props.mov) {
+    Wrapper = (
+      <div className={classes}>
+        <video className={styles.img} src={props.src} muted autoPlay loop playsInline controls >
+          <source src={props.src} type={props.mp4 ? "video/mp4" : "video/mov"} />
+        </video>
+      </div>
+    );
+  }
+
+  return Wrapper;
 };
 
 export default ImgWrapper;

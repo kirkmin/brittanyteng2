@@ -5,6 +5,8 @@ import Layout from './hoc/Layout/Layout';
 import Home from './containers/Home/Home';
 import Info from './containers/Info/Info';
 import Daily from './containers/Pages/Daily';
+import Transcendent from './containers/Pages/Transcendent';
+import Craft from './containers/Pages/Craft';
 
 class App extends Component {
   render () {
@@ -16,6 +18,8 @@ class App extends Component {
               <Route path="/" exact render={(props) => <Home {...props} setMainBackground={setMainBackground} />} />
               <Route path="/info" render={(props) => <Info {...props} setMainBackground={setMainBackground} />} />
               <Route path="/daily" render={(props) => <Daily {...props} setMainBackground={setMainBackground} />} />
+              <Route path="/transcendent" render={(props) => <Transcendent {...props} setMainBackground={setMainBackground} />} />
+              <Route path="/craft" render={(props) => <Craft {...props} setMainBackground={setMainBackground} />} />
               <Redirect to="/" />
             </Switch>
           )}
