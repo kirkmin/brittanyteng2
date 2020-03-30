@@ -9,8 +9,6 @@
 .header__link__container {
     display: block;
     height: 100%;
-    font-size: 28px;
-    line-height: 38px;
     letter-spacing: 0;
     overflow: hidden;
 }
@@ -19,6 +17,8 @@
     display: inline-flex;
     justify-content: center;
     height: 100%;
+    font-size: 28px;
+    line-height: 38px;
     border-radius: 36px;
     border: solid 2px #0E0E0E;
     min-width: 36px;
@@ -51,11 +51,8 @@
     }
 
     .header__link {
-        font-size: 34px;
+        font-size: 35px;
         line-height: 45px;
-    }
-
-    .header__link {
         border: solid 3px #0E0E0E;
         border-radius: 43px;
         min-width: 43px;
@@ -83,12 +80,6 @@
         padding: 29px 3.2% 29px 3.06%;
     }
 
-    .header__link {
-        font-size: 50px;
-        line-height: 65px;
-        letter-spacing: -1px;
-    }
-
     .container--home {
         flex: 1 1 calc(30% + 24px);
     }
@@ -98,6 +89,9 @@
     }
 
     .header__link {
+        font-size: 50px;
+        line-height: 65px;
+        letter-spacing: -1px;
         border: solid 4px #0E0E0E;
         border-radius: 62px;
         min-width: 62px;

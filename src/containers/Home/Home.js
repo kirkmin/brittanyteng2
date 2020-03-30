@@ -11,8 +11,10 @@ const Home = props => {
   }, [setBackground]);
 
   return (
-    <div>
-      Hello
+    <div className={styles['home__container']}>
+      <Link to="daily">Daily</Link>
+      <Link to="transcendent">Transcendent</Link>
+      <Link to="craft">Craft</Link>
     </div>
   );
 };
