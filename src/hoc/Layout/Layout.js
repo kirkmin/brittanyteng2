@@ -10,7 +10,6 @@ const Layout = (props) => {
   const [mainBackground, setMainBackground] = useState('white');
   const [showFixedHeader, setShowFixedHeader] = useState(false);
   const [currentPageYOffset, setCurrentPageYOffset] = useState(0);
-  const [fixedHeaderTimeout, setFixedHeaderTimeout] = useState(null);
 
   const prevCurrentPageYOffset = usePrevious(currentPageYOffset);
   const [fixedHeaderRef, isFixedHeaderHovered] = useHover();
@@ -27,24 +26,19 @@ const Layout = (props) => {
   }, []);
 
   useEffect(() => {
-    if (window.pageYOffset < 200) {
-      setShowFixedHeader(false);
-      clearTimeout(fixedHeaderTimeout);
-    } else if (prevCurrentPageYOffset > currentPageYOffset) {
-      setShowFixedHeader(true);
-      clearTimeout(fixedHeaderTimeout);
-      setFixedHeaderTimeout(setTimeout(() => {setShowFixedHeader(false)}, 3000));
+    if (showFixedHeader && !isFixedHeaderHovered) {
+      const timer = setTimeout(() => {setShowFixedHeader(false)}, 3000);
+      return () => clearTimeout(timer);
     }
-  }, [currentPageYOffset]);
+  }, [showFixedHeader, isFixedHeaderHovered]);
 
   useEffect(() => {
-    if (isFixedHeaderHovered) {
+    if (window.pageYOffset < 200) {
+      setShowFixedHeader(false);
+    } else if (prevCurrentPageYOffset > currentPageYOffset) {
       setShowFixedHeader(true);
-      clearTimeout(fixedHeaderTimeout);
-    } else {
-      setFixedHeaderTimeout(setTimeout(() => {setShowFixedHeader(false)}, 3000));
     }
-  }, [isFixedHeaderHovered]);
+  }, [prevCurrentPageYOffset, currentPageYOffset]);
 
   return (
     <main className={[styles.main, styles['main--' + mainBackground]].join(' ')}>
@@ -84,7 +78,7 @@ function useHover() {
         };
       }
     },
-    [ref.current]
+    [ref]
   );
 
   return [ref, value];
