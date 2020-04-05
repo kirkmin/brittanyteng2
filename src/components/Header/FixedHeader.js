@@ -7,15 +7,17 @@ import classNames from "classnames/bind";
 
 let cx = classNames.bind(styles);
 
-const Header = props => {
+const FixedHeader = props => {
   const classes = cx({
     "header": true,
+    "header--fixed": true,
     "header--white": props.background === "white",
-    "header--green": props.background === "green"
+    "header--green": props.background === "green",
+    "header--fixed-show": props.fixedShow
   });
 
   return (
-    <header className={classes}>
+    <header className={classes} ref={props.refCallback}>
       <div className={[styles['header__link__container'], styles['container--home']].join(' ')}>
         <Link to="/" className={styles['header__link']}>
           <div className={styles['header__link__content']}>B</div>
@@ -32,4 +34,4 @@ const Header = props => {
   );
 };
 
-export default Header;
+export default FixedHeader;

@@ -1,9 +1,19 @@
 .header {
     position: relative;
     padding: 15px 3.2% 15px 4.3%;
+    width: 100%;
     display: flex;
+    box-sizing: border-box;
     justify-content: space-between;
-    height: 36px;
+    height: 66px;
+}
+
+.header--white {
+    background: #FAFAFA;
+}
+
+.header--green {
+    background: #53FF8B;
 }
 
 .header--white .header__link:hover .header__link__content {
@@ -22,6 +32,17 @@
 
 .header--green .header__icon-container:hover svg g {
     stroke: #FAFAFA;
+}
+
+.header--fixed {
+    position: fixed;
+    top: 0;
+    transform: translateY(-100%);
+    transition: transform ease-in-out 300ms;
+}
+
+.header--fixed-show {
+    transform: translateY(0);
 }
 
 .header__link__container {
@@ -67,7 +88,7 @@
 
 @media only screen and (min-width: 375px) {
     .header {
-        height: 43px;
+        height: 77px;
         padding: 17px 3.2% 17px 4.3%;
     }
 
@@ -97,7 +118,7 @@
 
 @media only screen and (min-width: 768px) {
     .header {
-        height: 62px;
+        height: 120px;
         padding: 29px 3.2% 29px 3.06%;
     }
 
