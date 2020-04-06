@@ -4,28 +4,49 @@
     flex-direction: column;
 }
 
+.pages__text__container ol {
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em;
+}
+
 .pages__text {
     font-size: 18px;
     line-height: 22px;
     font-weight: normal;
     letter-spacing: -0.36px;
     color: #0E0E0E;
-    margin-bottom: 22px;
 }
 
-.text--title {
+.pages__text.text--title {
     font-size: 25px;
     line-height: 30px;
     letter-spacing: -0.5px;
     margin: -1px 0 3px;
 }
 
-.text--more-margin-bottom {
+.pages__text__container.container--desktop-order-first .pages__text {
+    margin-bottom: 22px;
+}
+
+.pages__text__container.container--desktop-order-first .pages__text.text--more-margin-bottom {
     margin-bottom: 30px;
 }
 
 .pages__text__italic {
     font-family: "FaktPro-Italic";
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+    border: none;
+    background: #979797;
+    margin: 5px 0;
+}
+
+hr.hr-extra-margins {
+    margin: 51px 0 62px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -40,8 +61,70 @@
         grid-column-gap: 3.2%;
     }
 
-    .container--desktop-order-first {
+    .pages__text__container.container--lefty-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .pages__text__container.container--tetris-grid {
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 2fr 1fr 2fr;
+    }
+
+    .pages__text__container.container--tetris-grid .pages__text.text--top-left {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .pages__text__container.container--tetris-grid .pages__text.text--bottom-right {
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .pages__text__container.container--desktop-order-first {
         order: -1;
+    }
+
+    .pages__text__container.container--extra-margins {
+        margin: 72px 8.3%;
+    }
+
+    .pages__text__container.container--extra-margins.container--little-margin-bottom {
+        margin-bottom: 12px;
+    }
+
+    .pages__text__container.container--extra-margins.container--even-more-margins {
+        margin: 12px 24%;
+    }
+
+    .pages__text__container.container--insights {
+        padding: 10px 0 1px 10px;
+    }
+
+    .pages__text__container.container--wireframing {
+        margin-top: 65px;
+        padding: 0 0 0 9px;
+    }
+
+    .pages__text {
+        font-size: 35px;
+        line-height: 40px;
+        letter-spacing: -0.8px;
+    }
+
+    .pages__text.text--title {
+        order: -1;
+        font-size: 70px;
+        line-height: 80px;
+        letter-spacing: -1.4px;
+        margin-bottom: 0;
+    }
+
+    .pages__text__container.container--desktop-order-first .pages__text {
+        margin-bottom: 45px;
     }
 
     .pages__text__container .pages__text {
@@ -64,18 +147,55 @@
         grid-row: 2 / 3;
     }
 
-    .pages__text {
-        font-size: 35px;
-        line-height: 40px;
-        letter-spacing: -0.8px;
-        margin-bottom: 45px;
+    .pages__text__container .pages__text.text--greater {
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 50px;
+        letter-spacing: -0.9px;
+        padding-right: 8.3%;
     }
 
-    .text--title {
-        order: -1;
+    .pages__text__container .pages__text.text--lesser {
+        font-size: 25px;
+        letter-spacing: -0.5px;
+        line-height: 32px;
+        padding-top: 14px;
+    }
+
+    .pages__text__container .pages__text.text--boxed {
+        font-size: 18px;
+        color: #0E0E0E;
+        letter-spacing: -0.36px;
+        line-height: 24px;
+    }
+
+    .pages__text__container .pages__text.text--boxed .text-box-content {
+        background: #F5F5F5;
+        padding: 40px;
+    }
+
+    .pages__text__container.container--section-header {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .pages__text__container.container--section-header.container--more-margins {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    .pages__text__container.container--section-header  .pages__text.text--header {
+        margin: 0;
         font-size: 70px;
         line-height: 80px;
         letter-spacing: -1.4px;
-        margin-bottom: 0;
+        font-weight: bold;
+    }
+
+    .pages__text__container.container--section-header  .pages__text.text--subheader {
+        font-weight: normal;
+        font-size: 45px;
+        margin-top: 12px;
     }
 }

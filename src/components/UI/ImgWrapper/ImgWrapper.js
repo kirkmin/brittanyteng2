@@ -10,7 +10,12 @@ const ImgWrapper = (props) => {
     "img__wrapper": true,
     "wrapper--right": props.right,
     "wrapper--left": props.left,
-    "wrapper--desktop-only": props.desktopOnly
+    "wrapper--desktop-only": props.desktopOnly,
+    "wrapper--extra-margins": props.extraMargins,
+    "wrapper--box-shadow": props.boxShadow,
+    "wrapper--grid-item": props.gridItem,
+    "wrapper--top-right": props.topRight,
+    "wrapper--bottom-left": props.bottomLeft
   });
 
   let Wrapper = (

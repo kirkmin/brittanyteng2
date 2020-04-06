@@ -39,22 +39,90 @@ const Athlete = props => {
           Design and Product collaborated to innovate this new product that undoubtedly adds more value for our members. Our challenge was to build a low friction product, work around engineering limitations, and ultimately figure out how to market this mixtape to obtain new customers.
         </h4>
       </div>
-      <div className={styles['pages__text__container']}>
+      <div className={[styles['pages__text__container'], styles['container--extra-margins']].join(' ')}>
         <h3 className={[styles['pages__text'], styles['text--left'], styles['text--greater']].join(' ')}>
           What are we trying to solve?
         </h3>
         <h4 className={[styles['pages__text'], styles['text--right'], styles['text--lesser']].join(' ')}>
-          Single-game player download clips were intially offered. This forced parents to download various games, upload them to a third party site, and stitch them together, driving away traffic from our website and creating more work for our customers.<br />
+          Single-game player download clips were intially offered. This forced parents to download various games, upload them to a third party site, and stitch them together, driving away traffic from our website and creating more work for our customers.<br/><br/>
           By offering multi-event player highlights, we can retain customers within our business ecosystem and move towards our goal of 0% margins.
         </h4>
       </div>
-      {/*<ImgWrapper src={Daily_1} />*/}
-      {/*<ImgWrapper src={Daily_2} right />*/}
-      {/*<ImgWrapper src={Daily_3} left />*/}
-      {/*<ImgWrapper src={Daily_4} />*/}
-      {/*<ImgWrapper src={Daily_5} right />*/}
-      {/*<ImgWrapper src={Daily_6} left />*/}
-      {/*<ImgWrapper src={Daily_7} />*/}
+      <hr/>
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--insights']].join(' ')}>
+        <h3 className={[styles['pages__text'], styles['text--left'], styles['text--greater']].join(' ')}>
+          Insights from Market Research
+        </h3>
+        <h4 className={[styles['pages__text'], styles['text--right'], styles['text--lesser']].join(' ')}>
+          <ol>
+            <li>Parents buy mixtapes, but the issues they run into is lack of content, automation, and quality.</li><br/>
+            <li>Parents mentioned they wish we had player highlights across different streams so they don’t have to outsource  to edit.</li><br/>
+            <li>Parents want to include detailed information in the clips such as name, school, position, etc. for recruitment purposes.</li><br/>
+            <li>College coaches want to see the strongest play first and keep the video short (3–5 min).</li>
+          </ol>
+        </h4>
+      </div>
+      <ImgWrapper extraMargins boxShadow src={Athlete_1} />
+      <ImgWrapper extraMargins boxShadow src={Athlete_2} />
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--wireframing']].join(' ')}>
+        <h3 className={[styles['pages__text'], styles['text--left'], styles['text--greater']].join(' ')}>
+          Wireframing<br/>Version 1.0
+        </h3>
+        <h4 className={[styles['pages__text'], styles['text--right'], styles['text--lesser']].join(' ')}>
+          When wireframing the initial version we made the following UX decisions:<br/><br/>
+          <ol>
+            <li>Letting them search our content library on the event level. Higher confidence of finding content, rather than searching by team.</li><br/>
+            <li>Allowing a level of customization by having ‘must have moments’.</li><br/>
+            <li>Ease the anxiety of the video editor not tracking the right athlete by identifying their athlete jersey per game.</li>
+          </ol>
+        </h4>
+      </div>
+      <ImgWrapper extraMargins src={Athlete_3} />
+      <hr className={styles['hr-extra-margins']}/>
+      <div className={[styles['pages__text__container'], styles['container--section-header']].join(' ')}>
+        <h2 className={[styles['pages__text'], styles['text--header']].join(' ')}>Version 1.0</h2>
+      </div>
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--lefty-grid'], styles['container--little-margin-bottom']].join(' ')}>
+        <ImgWrapper left gridItem boxShadow src={Athlete_4} />
+        <div className={[styles['pages__text'], styles['text--right'], styles['text--boxed']].join(' ')}>
+          <h4 className={styles['text-box-content']}>
+            In order to integrate all the capabilities of this product into a seamless experience, the ability to click through events and scroll within the results was a necessity. Buttons highlighted in blue indicate primary actions—switching between events and checking out. Users are able to preview games—triggering a viewport so you can verify this is the correct game and identify your child’s jersey number.
+          </h4>
+        </div>
+      </div>
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--even-more-margins'], styles['container--tetris-grid']].join(' ')}>
+        <div className={[styles['pages__text'], styles['text--top-left'], styles['text--boxed']].join(' ')}>
+          <h4 className={styles['text-box-content']}>
+            We designed a natural language form to capture athlete data—this felt more personable and engaging as a first step for our new product.
+          </h4>
+        </div>
+        <ImgWrapper left gridItem topRight boxShadow src={Athlete_5} />
+        <ImgWrapper left gridItem bottomLeft boxShadow src={Athlete_6} />
+        <div className={[styles['pages__text'], styles['text--bottom-right'], styles['text--boxed']].join(' ')}>
+          <h4 className={styles['text-box-content']}>
+            The same tiles were carried over from our core website to maintain familiarity with identifying games and events.<br/><br/>
+            Parents can easily keep track of their selections by tapping the “Selected Events” accordion menu.
+          </h4>
+        </div>
+      </div>
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--even-more-margins'], styles['container--tetris-grid']].join(' ')}>
+        <div className={[styles['pages__text'], styles['text--top-left'], styles['text--boxed']].join(' ')}>
+          <h4 className={styles['text-box-content']}>
+            A modal is triggered once they select a game, in order to capture their athlete’s info and any specific plays.
+          </h4>
+        </div>
+        <ImgWrapper left gridItem topRight boxShadow src={Athlete_7} />
+        <ImgWrapper left gridItem bottomLeft boxShadow src={Athlete_8} />
+        <div className={[styles['pages__text'], styles['text--bottom-right'], styles['text--boxed']].join(' ')}>
+          <h4 className={styles['text-box-content']}>
+            A modal is triggered once they select a game, in order to capture their athlete’s info and any specific plays.
+          </h4>
+        </div>
+      </div>
+      <div className={[styles['pages__text__container'], styles['container--section-header'], styles['container--more-margins']].join(' ')}>
+        <h2 className={[styles['pages__text'], styles['text--header']].join(' ')}>Launch Metric Results Version 1.0</h2>
+        <h3 className={[styles['pages__text'], styles['text--subheader']].join(' ')}>(Oct 2019–Feb 2020)</h3>
+      </div>
     </div>
   );
 };
