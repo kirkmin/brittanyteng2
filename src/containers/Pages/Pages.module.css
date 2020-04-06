@@ -18,11 +18,12 @@
     color: #0E0E0E;
 }
 
-.pages__text.text--title {
+.pages__text.text--title,
+.pages__text__container .pages__text.text--greater {
     font-size: 25px;
     line-height: 30px;
     letter-spacing: -0.5px;
-    margin: -1px 0 3px;
+    margin: 11px 0;
 }
 
 .pages__text__container.container--desktop-order-first .pages__text {
@@ -41,12 +42,20 @@ hr {
     height: 1px;
     width: 100%;
     border: none;
-    background: #979797;
+    background: #D8D8D8;
     margin: 5px 0;
 }
 
 hr.hr-extra-margins {
     margin: 51px 0 62px;
+}
+
+hr.hr-desktop-only {
+    display: none;
+}
+
+hr.hr-mobile-only {
+    margin-bottom: 12px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -61,11 +70,36 @@ hr.hr-extra-margins {
         grid-column-gap: 3.2%;
     }
 
+    .pages__text__container.container--extra-margins {
+        margin: 72px 8.3%;
+    }
+
+    .pages__text__container.container--extra-margins.container--little-margin-bottom {
+        margin-bottom: 12px;
+    }
+
+    .pages__text__container.container--extra-margins.container--little-margin-top {
+        margin-top: 12px;
+    }
+
+    .pages__text__container.container--extra-margins.container--double-box-container .pages__text.text--boxed {
+        display: flex;
+    }
+
+    .pages__text__container.container--extra-margins.container--more-margins {
+        margin: 12px 13% 80px;
+    }
+
     .pages__text__container.container--lefty-grid {
         grid-template-columns: 2fr 1fr;
     }
 
+    .pages__text__container.container--righty-grid {
+        grid-template-columns: 1fr 2fr;
+    }
+
     .pages__text__container.container--tetris-grid {
+        margin: 12px 24%;
         grid-template-columns: 2fr 1fr 2fr;
         grid-template-rows: 2fr 1fr 2fr;
     }
@@ -86,18 +120,6 @@ hr.hr-extra-margins {
 
     .pages__text__container.container--desktop-order-first {
         order: -1;
-    }
-
-    .pages__text__container.container--extra-margins {
-        margin: 72px 8.3%;
-    }
-
-    .pages__text__container.container--extra-margins.container--little-margin-bottom {
-        margin-bottom: 12px;
-    }
-
-    .pages__text__container.container--extra-margins.container--even-more-margins {
-        margin: 12px 24%;
     }
 
     .pages__text__container.container--insights {
@@ -180,12 +202,17 @@ hr.hr-extra-margins {
         text-align: center;
     }
 
-    .pages__text__container.container--section-header.container--more-margins {
-        margin-top: 60px;
-        margin-bottom: 40px;
+    .pages__text__container.container--section-header.container--margin-bottom {
+        margin-bottom: 60px;
     }
 
-    .pages__text__container.container--section-header  .pages__text.text--header {
+    .pages__text__container.container--section-header.container--more-margins {
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
+
+    .pages__text__container.container--section-header  .pages__text.text--header,
+    .pages__text__centered-circle .centered-circle-header {
         margin: 0;
         font-size: 70px;
         line-height: 80px;
@@ -197,5 +224,56 @@ hr.hr-extra-margins {
         font-weight: normal;
         font-size: 45px;
         margin-top: 12px;
+    }
+
+    .pages__text__centered-circle .centered-circle-subheader {
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 45px;
+    }
+
+    .pages__text__centered-circle {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        background: #F5F5F5;
+        border-radius: 100%;
+    }
+
+    .pages__text.text--centered-circle {
+        padding-top: 100%;
+        position: relative;
+    }
+
+    .pages__text.text--centered-boxed {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        text-align: center;
+        background: #F5F5F5;
+    }
+
+    .pages__text.text--centered-boxed .centered-box-content {
+        display: block;
+        font-weight: bold;
+        font-size: 35px;
+        letter-spacing: -0.7px;
+        line-height: 45px;
+    }
+
+    hr.hr-mobile-only {
+        display: none;
+    }
+
+    hr.hr-desktop-only {
+        display: block;
     }
 }

@@ -39,6 +39,7 @@
     top: 0;
     transform: translateY(-100%);
     transition: transform ease-in-out 300ms;
+    z-index: 9999999;
 }
 
 .header--fixed-show {

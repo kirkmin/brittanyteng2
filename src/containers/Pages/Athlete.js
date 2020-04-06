@@ -39,6 +39,7 @@ const Athlete = props => {
           Design and Product collaborated to innovate this new product that undoubtedly adds more value for our members. Our challenge was to build a low friction product, work around engineering limitations, and ultimately figure out how to market this mixtape to obtain new customers.
         </h4>
       </div>
+      <hr className={styles['hr-mobile-only']}/>
       <div className={[styles['pages__text__container'], styles['container--extra-margins']].join(' ')}>
         <h3 className={[styles['pages__text'], styles['text--left'], styles['text--greater']].join(' ')}>
           What are we trying to solve?
@@ -48,7 +49,7 @@ const Athlete = props => {
           By offering multi-event player highlights, we can retain customers within our business ecosystem and move towards our goal of 0% margins.
         </h4>
       </div>
-      <hr/>
+      <hr className={styles['hr-desktop-only']}/>
       <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--insights']].join(' ')}>
         <h3 className={[styles['pages__text'], styles['text--left'], styles['text--greater']].join(' ')}>
           Insights from Market Research
@@ -90,7 +91,7 @@ const Athlete = props => {
           </h4>
         </div>
       </div>
-      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--even-more-margins'], styles['container--tetris-grid']].join(' ')}>
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--tetris-grid']].join(' ')}>
         <div className={[styles['pages__text'], styles['text--top-left'], styles['text--boxed']].join(' ')}>
           <h4 className={styles['text-box-content']}>
             We designed a natural language form to capture athlete data—this felt more personable and engaging as a first step for our new product.
@@ -105,7 +106,7 @@ const Athlete = props => {
           </h4>
         </div>
       </div>
-      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--even-more-margins'], styles['container--tetris-grid']].join(' ')}>
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--tetris-grid']].join(' ')}>
         <div className={[styles['pages__text'], styles['text--top-left'], styles['text--boxed']].join(' ')}>
           <h4 className={styles['text-box-content']}>
             A modal is triggered once they select a game, in order to capture their athlete’s info and any specific plays.
@@ -115,13 +116,87 @@ const Athlete = props => {
         <ImgWrapper left gridItem bottomLeft boxShadow src={Athlete_8} />
         <div className={[styles['pages__text'], styles['text--bottom-right'], styles['text--boxed']].join(' ')}>
           <h4 className={styles['text-box-content']}>
-            A modal is triggered once they select a game, in order to capture their athlete’s info and any specific plays.
+            Once all events are selected, the “Edit Team” button allows parents to add their athlete’s team and surface games they participated in during those events.
           </h4>
         </div>
       </div>
       <div className={[styles['pages__text__container'], styles['container--section-header'], styles['container--more-margins']].join(' ')}>
         <h2 className={[styles['pages__text'], styles['text--header']].join(' ')}>Launch Metric Results Version 1.0</h2>
         <h3 className={[styles['pages__text'], styles['text--subheader']].join(' ')}>(Oct 2019–Feb 2020)</h3>
+      </div>
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--lefty-grid'], styles['container--more-margins']].join(' ')}>
+        <div className={[styles['pages__text'], styles['text--left'], styles['text--centered-boxed']].join(' ')}>
+          <h3 className={styles['centered-box-content']}>201 Athlete Mixtape Orders</h3>
+          <h3 className={styles['centered-box-content']}>vs</h3>
+          <h3 className={styles['centered-box-content']}>94 Player Clip Orders</h3>
+        </div>
+        <div className={[styles['pages__text'], styles['text--right'], styles['text--centered-circle']].join(' ')}>
+          <div className={[styles['pages__text__centered-circle']].join(' ')}>
+            <h2 className={styles['centered-circle-header']}>67</h2>
+            <h4 className={styles['centered-circle-subheader']}>Version 1.0 NPS</h4>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--wireframing']].join(' ')}>
+        <h3 className={[styles['pages__text'], styles['text--left'], styles['text--greater']].join(' ')}>
+          Wireframing<br/>Version 2.0
+        </h3>
+        <h4 className={[styles['pages__text'], styles['text--right'], styles['text--lesser']].join(' ')}>
+          With the rebrand we had bandwidth to update the front end and make UX changes we didnt have the resources to make. The focus is creating more delightful moments for users to increase the NPS.
+        </h4>
+      </div>
+      <ImgWrapper extraMargins src={Athlete_9} />
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--wireframing']].join(' ')}>
+        <h4 className={[styles['pages__text'], styles['text--right'], styles['text--lesser']].join(' ')}>
+          Borrowing food delivery UX, we implemented an editable order summary that is sticky throughout the process—it allows the user to focus on the content but know that they can always modify their order along the way.
+        </h4>
+      </div>
+      <hr className={styles['hr-extra-margins']}/>
+      <div className={[styles['pages__text__container'], styles['container--section-header'], styles['container--margin-bottom']].join(' ')}>
+        <h2 className={[styles['pages__text'], styles['text--header']].join(' ')}>Version 2.0</h2>
+      </div>
+      <ImgWrapper extraMargins src={Athlete_10} />
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--double-box-container'], styles['container--little-margin-bottom'], styles['container--little-margin-top']].join(' ')}>
+        <div className={[styles['pages__text'], styles['text--left'], styles['text--boxed']].join(' ')}>
+          <h4 className={styles['text-box-content']}>
+            For Version 2.0, we had the opportunity and resources to refresh the UI and flesh out the UX further. In order to shorten the process and create less friction, we opted to have all Athlete Info input on one screen.<br/><br/>
+            In line with food delivery UX, we added a sticky icon to the top right so they could modify or complete their order at any point in the process.
+          </h4>
+        </div>
+        <div className={[styles['pages__text'], styles['text--right'], styles['text--boxed']].join(' ')}>
+          <h4 className={styles['text-box-content']}>
+            After adding a game, you would be returned to the list of games to add more, or complete your mixtape order.<br/><br/>
+            We were able to incorporate Search in the process, so parents could find their events and games much faster. The Select action was separated from the event and game tiles, to clearly distinguish between previewing a game and selecting one.
+          </h4>
+        </div>
+      </div>
+      <ImgWrapper extraMargins src={Athlete_11} />
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--lefty-grid'], styles['container--little-margin-bottom'], styles['container--little-margin-top']].join(' ')}>
+        <ImgWrapper left gridItem src={Athlete_12} />
+        <div className={[styles['pages__text'], styles['text--right'], styles['text--boxed']].join(' ')}>
+          <h4 className={styles['text-box-content']}>
+            Since this is a new product, it was essential for us to include a sample Athlete Mixtape for both current and new customers to see what they can create with this tool.
+        </h4>
+        </div>
+      </div>
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--righty-grid'], styles['container--little-margin-bottom'], styles['container--little-margin-top']].join(' ')}>
+        <div className={[styles['pages__text'], styles['text--left'], styles['text--boxed']].join(' ')}>
+          <h4 className={styles['text-box-content']}>
+            For Version 2.0, we tested moving payment to the beginning of the flow to improve conversion.*<br/><br/>
+            *Currently monitoring metrics
+          </h4>
+        </div>
+        <ImgWrapper right gridItem src={Athlete_12} />
+      </div>
+      <ImgWrapper extraMargins src={Athlete_13} />
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--wireframing']].join(' ')}>
+        <h3 className={[styles['pages__text'], styles['text--left'], styles['text--greater']].join(' ')}>
+          Where do we go from here?
+        </h3>
+        <h4 className={[styles['pages__text'], styles['text--right'], styles['text--lesser']].join(' ')}>
+          Moving forward, we would continue to track all the other metrics but really focus on NPS increasing and reducing mobile drop off rate.
+        </h4>
       </div>
     </div>
   );
