@@ -31,25 +31,13 @@ const Craft = props => {
       <h3 className={[styles['pages__text'], styles['text--title']].join(' ')}>
         Contemporary Craft Center
       </h3>
-      <div className={[styles['pages__text__container'], styles['container--mobile']].join(' ')}>
-        <h4 className={styles['pages__text']}>
+      <div className={[styles['pages__text__container'], styles['container--desktop-order-first']].join(' ')}>
+        <h4 className={[styles['pages__text'], styles['text--left']].join(' ')}>
           The Contemporary Craft Center is a place to both see and make art. The center emphasizes a hands-on approach to learning and creating. The simple building blocks that make up the mark are inspired by the nostalgic memories of childhood, representing the institution's playful nature and collaborative environment.
         </h4>
-        <h4 className={styles['pages__text']}>
+        <h4 className={[styles['pages__text'], styles['text--right']].join(' ')}>
           Materiality and color play a huge role in the center's identity ranging from pattern work to outdoor furniture. I developed the visual language to focus around the idea of learning from your process. There is no fail at the Contemporary Craft Center, because the intention is not to create something perfect, it's simply to create.
         </h4>
-      </div>
-      <div className={[styles['pages__text__container'], styles['container--desktop']].join(' ')}>
-        <div className={styles['pages__text__column']}>
-          <h4 className={styles['pages__text']}>
-            The Contemporary Craft Center is a place to both see and make art. The center emphasizes a hands-on approach to learning and creating. The simple building blocks that make up the mark are inspired by the nostalgic memories of childhood, representing the institution's playful nature and collaborative environment.
-          </h4>
-        </div>
-        <div className={styles['pages__text__column']}>
-          <h4 className={styles['pages__text']}>
-            Materiality and color play a huge role in the center's identity ranging from pattern work to outdoor furniture. I developed the visual language to focus around the idea of learning from your process. There is no fail at the Contemporary Craft Center, because the intention is not to create something perfect, it's simply to create.
-          </h4>
-        </div>
       </div>
       <ImgWrapper src={Craft_1} />
       <ImgWrapper src={Craft_2} />

@@ -24,25 +24,13 @@ const Transcendent = props => {
       <h3 className={[styles['pages__text'], styles['text--title']].join(' ')}>
         Transcendent Material
       </h3>
-      <div className={[styles['pages__text__container'], styles['container--mobile']].join(' ')}>
-        <h4 className={styles['pages__text']}>
+      <div className={[styles['pages__text__container'], styles['container--desktop-order-first']].join(' ')}>
+        <h4 className={[styles['pages__text'], styles['text--left']].join(' ')}>
           Transcendent Material is an exhibition on artist Tara Donovan's site-specific installations. Donovan's large, organic sculptures made from mundane materials are immense representations of naturally occurring organisms. Her strategy of obsessive repetition gives shape to these materials in a different context, depending on your vantage point.
         </h4>
-        <h4 className={styles['pages__text']}>
+        <h4 className={[styles['pages__text'], styles['text--right']].join(' ')}>
           I utilized typography as a means to abstract the dimensional sculptures and highlight the skeletal qualities of her work. This interactive title wall gives the viewer a sense of what it would be like to completely immerse oneself in her Polyester Film sculpture. By employing a combination of projection mapping, motion sensors, and processing, I created an experience that invites the visitor to have a dialogue with the fabric and the type that floods the installation.
         </h4>
-      </div>
-      <div className={[styles['pages__text__container'], styles['container--desktop']].join(' ')}>
-        <div className={styles['pages__text__column']}>
-          <h4 className={styles['pages__text']}>
-            Transcendent Material is an exhibition on artist Tara Donovan's site-specific installations. Donovan's large, organic sculptures made from mundane materials are immense representations of naturally occurring organisms. Her strategy of obsessive repetition gives shape to these materials in a different context, depending on your vantage point.
-          </h4>
-        </div>
-        <div className={styles['pages__text__column']}>
-          <h4 className={styles['pages__text']}>
-            I utilized typography as a means to abstract the dimensional sculptures and highlight the skeletal qualities of her work. This interactive title wall gives the viewer a sense of what it would be like to completely immerse oneself in her Polyester Film sculpture. By employing a combination of projection mapping, motion sensors, and processing, I created an experience that invites the visitor to have a dialogue with the fabric and the type that floods the installation.
-          </h4>
-        </div>
       </div>
       <ImgWrapper src={Transcendent_1} mp4 />
       <ImgWrapper src={Transcendent_2} right />
