@@ -8,6 +8,7 @@ import Daily from './containers/Pages/Daily';
 import Athlete from './containers/Pages/Athlete';
 import Design from './containers/Pages/Design';
 import Teamwork from './containers/Pages/Teamwork';
+import Teammate from './containers/Pages/Teammate';
 import Transcendent from './containers/Pages/Transcendent';
 import Craft from './containers/Pages/Craft';
 
@@ -24,6 +25,7 @@ class App extends Component {
               <Route path="/athlete" render={(props) => <Athlete {...props} setMainBackground={setMainBackground} />} />
               <Route path="/design" render={(props) => <Design {...props} setMainBackground={setMainBackground} />} />
               <Route path="/teamwork" render={(props) => <Teamwork {...props} setMainBackground={setMainBackground} />} />
+              <Route path="/teammate" render={(props) => <Teammate {...props} setMainBackground={setMainBackground} />} />
               <Route path="/transcendent" render={(props) => <Transcendent {...props} setMainBackground={setMainBackground} />} />
               <Route path="/craft" render={(props) => <Craft {...props} setMainBackground={setMainBackground} />} />
               <Redirect to="/" />

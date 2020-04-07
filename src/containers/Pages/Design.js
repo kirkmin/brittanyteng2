@@ -98,7 +98,7 @@ const Design = props => {
       <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--righty-grid'], styles['container--little-margin-bottom'], styles['container--little-margin-top']].join(' ')}>
         <ImgWrapper right gridItem mobileMarginTop src={Design_2} />
       </div>
-      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--lefty-grid'], styles['container--little-margin-bottom'], styles['container--little-margin-top'], styles['container--little-margin-bottom']].join(' ')}>
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--lefty-grid'], styles['container--little-margin-bottom'], styles['container--little-margin-top']].join(' ')}>
         <ImgWrapper left gridItem mobileMarginTop src={Design_3} />
         <div className={[styles['pages__text'], styles['text--right'], styles['text--boxed']].join(' ')}>
           <h4 className={[styles['text-box-content'], styles['text-box-content--mobile-margin-top'], styles['text-box-content--mobile-margin-bottom']].join(' ')}>

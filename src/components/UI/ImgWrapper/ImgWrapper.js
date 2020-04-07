@@ -19,7 +19,10 @@ const ImgWrapper = (props) => {
     "wrapper--mobile-top": props.mobileTop,
     "wrapper--mobile-margin-top": props.mobileMarginTop,
     "wrapper--mobile-margin-bottom": props.mobileMarginBottom,
-
+    "wrapper--desktop-extra-margin-top": props.desktopExtraMarginTop,
+    "wrapper--desktop-extra-margin-bottom": props.desktopExtraMarginBottom,
+    "wrapper--stretch": props.stretch,
+    "wrapper--illustration": props.illustration
   });
 
   let Wrapper = (
