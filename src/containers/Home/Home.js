@@ -109,7 +109,7 @@ const Home = props => {
       </Link>
       <Link to="transcendent">
         <div className={styles['link__content__container']}>
-          <div className={[styles['link__content'], styles['content--small']].join(' ')}>
+          <div className={[styles['link__content'], styles['content--small'], styles['content--mobile-order-last']].join(' ')}>
             <ImgWrapper src={Transcendent_2} desktopOnly />
             <h3 className={[styles['link__content__text'], styles['text--title']].join(' ')}>
               Transcendent Material
