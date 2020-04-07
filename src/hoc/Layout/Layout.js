@@ -42,8 +42,8 @@ const Layout = (props) => {
 
   return (
     <main className={[styles.main, styles['main--' + mainBackground]].join(' ')}>
-      <Header background={mainBackground === "green" ? "white" : "green"} />
-      <FixedHeader background={mainBackground === "green" ? "white" : "green"} fixedShow={showFixedHeader} refCallback={fixedHeaderRef} />
+      <Header background={mainBackground} />
+      <FixedHeader background={mainBackground} fixedShow={showFixedHeader} refCallback={fixedHeaderRef} />
       {props.children(setMainBackground)}
     </main>
   );
