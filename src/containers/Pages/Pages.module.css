@@ -170,6 +170,10 @@
     padding: 0 0 10px 10px;
 }
 
+.text--only-desktop {
+    display: none;
+}
+
 hr {
     height: 1px;
     width: 100%;
@@ -277,7 +281,7 @@ br.br-desktop-only {
         font-size: 70px;
         line-height: 80px;
         letter-spacing: -1.4px;
-        margin-bottom: 0;
+        margin-bottom: 25px;
     }
 
     .pages__text__container.container--desktop-order-first .pages__text {
@@ -386,6 +390,10 @@ br.br-desktop-only {
     .pages__text.text--centered-circle {
         padding-top: 100%;
         margin: 0;
+    }
+
+    .text--only-desktop {
+        display: block;
     }
 
     hr.hr-mobile-only {
