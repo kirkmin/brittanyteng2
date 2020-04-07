@@ -106,13 +106,13 @@ const Design = props => {
           </h4>
         </div>
       </div>
-      <ImgWrapper right gridItem mobileMarginTop src={Design_4} />
-      <ImgWrapper right gridItem mobileMarginTop src={Design_5} />
-      <ImgWrapper right gridItem mobileMarginTop src={Design_6} />
-      <ImgWrapper right gridItem mobileMarginTop src={Design_7} />
-      <ImgWrapper right gridItem mobileMarginTop src={Design_8} />
-      <ImgWrapper right gridItem mobileMarginTop src={Design_9} />
-      <ImgWrapper right gridItem mobileMarginTop src={Design_10} />
+      <ImgWrapper extraMargins mobileMarginTop src={Design_4} />
+      <ImgWrapper extraMargins mobileMarginTop src={Design_5} />
+      <ImgWrapper extraMargins mobileMarginTop src={Design_6} />
+      <ImgWrapper extraMargins mobileMarginTop src={Design_7} />
+      <ImgWrapper extraMargins mobileMarginTop src={Design_8} />
+      <ImgWrapper extraMargins mobileMarginTop src={Design_9} />
+      <ImgWrapper extraMargins mobileMarginTop src={Design_10} />
     </div>
   );
 };
