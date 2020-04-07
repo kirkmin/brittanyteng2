@@ -184,16 +184,16 @@ const Athlete = props => {
         </h4>
         </div>
       </div>
-      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--righty-grid'], styles['container--little-margin-bottom'], styles['container--little-margin-top']].join(' ')}>
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--righty-grid'], styles['container--little-margin-bottom'], styles['container--little-margin-top'], styles['container__dynamic-order-wrapper']].join(' ')}>
         <div className={[styles['pages__text'], styles['text--left'], styles['text--boxed']].join(' ')}>
-          <h4 className={[styles['text-box-content'], styles['text-box-content--mobile-no-padding-top']].join(' ')}>
+          <h4 className={styles['text-box-content']}>
             For Version 2.0, we tested moving payment to the beginning of the flow to improve conversion.*<br/><br/>
             *Currently monitoring metrics
           </h4>
         </div>
-        <ImgWrapper right gridItem src={Athlete_12} mobileMarginTop />
+        <ImgWrapper right gridItem src={Athlete_13} mobileTop mobileMarginTop mobileMarginBottom />
       </div>
-      <ImgWrapper extraMargins src={Athlete_13} mobileMarginTop />
+      <ImgWrapper extraMargins src={Athlete_14} mobileMarginTop />
       <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--wireframing'], styles['container--mobile-extra-padding-bottom']].join(' ')}>
         <h3 className={[styles['pages__text'], styles['text--left'], styles['text--greater']].join(' ')}>
           Where do we go from here?

@@ -351,13 +351,15 @@ br.br-desktop-only {
     }
 
     .pages__text__container.container--section-header  .pages__text.text--header,
+    .pages__text__container.container--section-header.container--smaller-mobile  .pages__text.text--header,
     .pages__text__centered-circle .centered-circle-header {
         font-size: 70px;
         line-height: 80px;
         letter-spacing: -1.4px;
     }
 
-    .pages__text__container.container--section-header
+    .pages__text__container.container--section-header,
+    .pages__text__container.container--section-header.container--smaller-mobile  .pages__text.text--subheader,
     .pages__text.text--subheader {
         font-weight: normal;
         font-size: 45px;
