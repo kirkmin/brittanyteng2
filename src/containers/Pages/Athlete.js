@@ -50,24 +50,27 @@ const Athlete = props => {
         </h4>
       </div>
       <hr className={styles['hr-desktop-only']}/>
-      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--insights']].join(' ')}>
-        <h3 className={[styles['pages__text'], styles['text--left'], styles['text--greater']].join(' ')}>
-          Insights from Market Research
-        </h3>
-        <h4 className={[styles['pages__text'], styles['text--right'], styles['text--lesser']].join(' ')}>
-          <ol>
-            <li>Parents buy mixtapes, but the issues they run into is lack of content, automation, and quality.</li><br/>
-            <li>Parents mentioned they wish we had player highlights across different streams so they don’t have to outsource  to edit.</li><br/>
-            <li>Parents want to include detailed information in the clips such as name, school, position, etc. for recruitment purposes.</li><br/>
-            <li>College coaches want to see the strongest play first and keep the video short (3–5 min).</li>
-          </ol>
-        </h4>
+      <div className={styles['container__dynamic-order-wrapper']}>
+        <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--insights']].join(' ')}>
+          <h3 className={[styles['pages__text'], styles['text--left'], styles['text--greater']].join(' ')}>
+            Insights from Market Research
+          </h3>
+          <h4 className={[styles['pages__text'], styles['text--right'], styles['text--lesser']].join(' ')}>
+            <ol>
+              <li>Parents buy mixtapes, but the issues they run into is lack of content, automation, and quality.</li><br/>
+              <li>Parents mentioned they wish we had player highlights across different streams so they don’t have to outsource  to edit.</li><br/>
+              <li>Parents want to include detailed information in the clips such as name, school, position, etc. for recruitment purposes.</li><br/>
+              <li>College coaches want to see the strongest play first and keep the video short (3–5 min).</li>
+            </ol>
+          </h4>
+        </div>
+        <ImgWrapper extraMargins boxShadow mobileTop mobileMarginTop src={Athlete_1} />
+        <ImgWrapper extraMargins boxShadow mobileTop mobileMarginTop src={Athlete_2} />
       </div>
-      <ImgWrapper extraMargins boxShadow src={Athlete_1} />
-      <ImgWrapper extraMargins boxShadow src={Athlete_2} />
+      <hr className={styles['hr-mobile-only']}/>
       <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--wireframing']].join(' ')}>
         <h3 className={[styles['pages__text'], styles['text--left'], styles['text--greater']].join(' ')}>
-          Wireframing<br/>Version 1.0
+          Wireframing <br className={styles['br-desktop-only']}/>Version 1.0
         </h3>
         <h4 className={[styles['pages__text'], styles['text--right'], styles['text--lesser']].join(' ')}>
           When wireframing the initial version we made the following UX decisions:<br/><br/>
@@ -83,10 +86,10 @@ const Athlete = props => {
       <div className={[styles['pages__text__container'], styles['container--section-header']].join(' ')}>
         <h2 className={[styles['pages__text'], styles['text--header']].join(' ')}>Version 1.0</h2>
       </div>
-      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--lefty-grid'], styles['container--little-margin-bottom']].join(' ')}>
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--lefty-grid'], styles['container--little-margin-bottom'], styles['container--only-for-large']].join(' ')}>
         <ImgWrapper left gridItem boxShadow src={Athlete_4} />
         <div className={[styles['pages__text'], styles['text--right'], styles['text--boxed']].join(' ')}>
-          <h4 className={styles['text-box-content']}>
+          <h4 className={[styles['text-box-content'], styles['text-box-content--mobile-margin-top']].join(' ')}>
             In order to integrate all the capabilities of this product into a seamless experience, the ability to click through events and scroll within the results was a necessity. Buttons highlighted in blue indicate primary actions—switching between events and checking out. Users are able to preview games—triggering a viewport so you can verify this is the correct game and identify your child’s jersey number.
           </h4>
         </div>
@@ -120,11 +123,12 @@ const Athlete = props => {
           </h4>
         </div>
       </div>
-      <div className={[styles['pages__text__container'], styles['container--section-header'], styles['container--more-margins']].join(' ')}>
+      <hr className={[styles['hr-mobile-only'], styles['hr-extra-margin-top']].join(' ')}/>
+      <div className={[styles['pages__text__container'], styles['container--section-header'], styles['container--more-margins'], styles['container--smaller-mobile']].join(' ')}>
         <h2 className={[styles['pages__text'], styles['text--header']].join(' ')}>Launch Metric Results Version 1.0</h2>
         <h3 className={[styles['pages__text'], styles['text--subheader']].join(' ')}>(Oct 2019–Feb 2020)</h3>
       </div>
-      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--lefty-grid'], styles['container--more-margins']].join(' ')}>
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--lefty-grid'], styles['container--more-margins'], styles['container--max-width-mobile']].join(' ')}>
         <div className={[styles['pages__text'], styles['text--left'], styles['text--centered-boxed']].join(' ')}>
           <h3 className={styles['centered-box-content']}>201 Athlete Mixtape Orders</h3>
           <h3 className={styles['centered-box-content']}>vs</h3>
@@ -140,7 +144,7 @@ const Athlete = props => {
       <hr/>
       <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--wireframing']].join(' ')}>
         <h3 className={[styles['pages__text'], styles['text--left'], styles['text--greater']].join(' ')}>
-          Wireframing<br/>Version 2.0
+          Wireframing <br className={styles['br-desktop-only']}/>Version 2.0
         </h3>
         <h4 className={[styles['pages__text'], styles['text--right'], styles['text--lesser']].join(' ')}>
           With the rebrand we had bandwidth to update the front end and make UX changes we didnt have the resources to make. The focus is creating more delightful moments for users to increase the NPS.
@@ -156,7 +160,7 @@ const Athlete = props => {
       <div className={[styles['pages__text__container'], styles['container--section-header'], styles['container--margin-bottom']].join(' ')}>
         <h2 className={[styles['pages__text'], styles['text--header']].join(' ')}>Version 2.0</h2>
       </div>
-      <ImgWrapper extraMargins src={Athlete_10} />
+      <ImgWrapper extraMargins src={Athlete_10} mobileMarginBottom />
       <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--double-box-container'], styles['container--little-margin-bottom'], styles['container--little-margin-top']].join(' ')}>
         <div className={[styles['pages__text'], styles['text--left'], styles['text--boxed']].join(' ')}>
           <h4 className={styles['text-box-content']}>
@@ -165,15 +169,15 @@ const Athlete = props => {
           </h4>
         </div>
         <div className={[styles['pages__text'], styles['text--right'], styles['text--boxed']].join(' ')}>
-          <h4 className={styles['text-box-content']}>
+          <h4 className={[styles['text-box-content'], styles['text-box-content--mobile-no-padding-top']].join(' ')}>
             After adding a game, you would be returned to the list of games to add more, or complete your mixtape order.<br/><br/>
             We were able to incorporate Search in the process, so parents could find their events and games much faster. The Select action was separated from the event and game tiles, to clearly distinguish between previewing a game and selecting one.
           </h4>
         </div>
       </div>
-      <ImgWrapper extraMargins src={Athlete_11} />
+      <ImgWrapper extraMargins src={Athlete_11} mobileMarginTop />
       <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--lefty-grid'], styles['container--little-margin-bottom'], styles['container--little-margin-top']].join(' ')}>
-        <ImgWrapper left gridItem src={Athlete_12} />
+        <ImgWrapper left gridItem src={Athlete_12} mobileMarginTop mobileMarginBottom />
         <div className={[styles['pages__text'], styles['text--right'], styles['text--boxed']].join(' ')}>
           <h4 className={styles['text-box-content']}>
             Since this is a new product, it was essential for us to include a sample Athlete Mixtape for both current and new customers to see what they can create with this tool.
@@ -182,15 +186,15 @@ const Athlete = props => {
       </div>
       <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--righty-grid'], styles['container--little-margin-bottom'], styles['container--little-margin-top']].join(' ')}>
         <div className={[styles['pages__text'], styles['text--left'], styles['text--boxed']].join(' ')}>
-          <h4 className={styles['text-box-content']}>
+          <h4 className={[styles['text-box-content'], styles['text-box-content--mobile-no-padding-top']].join(' ')}>
             For Version 2.0, we tested moving payment to the beginning of the flow to improve conversion.*<br/><br/>
             *Currently monitoring metrics
           </h4>
         </div>
-        <ImgWrapper right gridItem src={Athlete_12} />
+        <ImgWrapper right gridItem src={Athlete_12} mobileMarginTop />
       </div>
-      <ImgWrapper extraMargins src={Athlete_13} />
-      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--wireframing']].join(' ')}>
+      <ImgWrapper extraMargins src={Athlete_13} mobileMarginTop />
+      <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--wireframing'], styles['container--mobile-extra-padding-bottom']].join(' ')}>
         <h3 className={[styles['pages__text'], styles['text--left'], styles['text--greater']].join(' ')}>
           Where do we go from here?
         </h3>
