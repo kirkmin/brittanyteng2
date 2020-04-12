@@ -22,7 +22,8 @@ const ImgWrapper = (props) => {
     "wrapper--desktop-extra-margin-top": props.desktopExtraMarginTop,
     "wrapper--desktop-extra-margin-bottom": props.desktopExtraMarginBottom,
     "wrapper--stretch": props.stretch,
-    "wrapper--illustration": props.illustration
+    "wrapper--illustration": props.illustration,
+    "wrapper--align-centered": props.alignCentered
   });
 
   let Wrapper = (

@@ -49,6 +49,10 @@
     margin-bottom: 0;
 }
 
+.wrapper--align-centered {
+    align-self: center;
+}
+
 .wrapper--illustration {
     align-self: center;
     justify-self: center;
