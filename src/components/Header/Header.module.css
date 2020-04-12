@@ -35,14 +35,19 @@
 }
 
 .header--fixed {
+    opacity: 0;
     position: fixed;
     top: 0;
     transform: translateY(-100%);
-    transition: transform ease-in-out 300ms;
+    transition: transform ease-in-out 300ms, opacity ease-in-out 50ms;
     z-index: 9999999;
 }
 
 .header--fixed-show {
+    opacity: 1;
+}
+
+.header--fixed-slide {
     transform: translateY(0);
 }
 

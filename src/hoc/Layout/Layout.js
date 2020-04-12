@@ -8,6 +8,7 @@ import styles from './Layout.module.css';
 
 const Layout = (props) => {
   const [mainBackground, setMainBackground] = useState('white');
+  const [slideFixedHeader, setSlideFixedHeader] = useState(false);
   const [showFixedHeader, setShowFixedHeader] = useState(false);
   const [currentPageYOffset, setCurrentPageYOffset] = useState(0);
 
@@ -19,6 +20,14 @@ const Layout = (props) => {
   };
 
   useEffect(() => {
+    if (showFixedHeader) {
+      if (prevCurrentPageYOffset > currentPageYOffset) {
+        setSlideFixedHeader(true);
+      }
+    }
+  }, [showFixedHeader, prevCurrentPageYOffset, currentPageYOffset]);
+
+  useEffect(() => {
     window.addEventListener("scroll", scrollListener);
     return () => {
       window.removeEventListener("scroll", scrollListener);
@@ -26,16 +35,16 @@ const Layout = (props) => {
   }, []);
 
   useEffect(() => {
-    if (showFixedHeader && !isFixedHeaderHovered) {
-      const timer = setTimeout(() => {setShowFixedHeader(false)}, 3000);
+    if (slideFixedHeader && !isFixedHeaderHovered) {
+      const timer = setTimeout(() => {setSlideFixedHeader(false)}, 3000);
       return () => clearTimeout(timer);
     }
-  }, [showFixedHeader, isFixedHeaderHovered]);
+  }, [slideFixedHeader, isFixedHeaderHovered]);
 
   useEffect(() => {
     if (window.pageYOffset < 200) {
       setShowFixedHeader(false);
-    } else if (prevCurrentPageYOffset > currentPageYOffset) {
+    } else {
       setShowFixedHeader(true);
     }
   }, [prevCurrentPageYOffset, currentPageYOffset]);
@@ -43,7 +52,7 @@ const Layout = (props) => {
   return (
     <main className={[styles.main, styles['main--' + mainBackground]].join(' ')}>
       <Header background={mainBackground} />
-      <FixedHeader background={mainBackground} fixedShow={showFixedHeader} refCallback={fixedHeaderRef} />
+      <FixedHeader background={mainBackground} fixedSlide={slideFixedHeader} fixedShow={showFixedHeader} refCallback={fixedHeaderRef} />
       {props.children(setMainBackground)}
     </main>
   );

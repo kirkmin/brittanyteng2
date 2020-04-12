@@ -27,7 +27,11 @@ const Header = props => {
           <div className={[styles['header__link__content'], styles['content--info']].join(' ')}>Info</div>
         </Link>
       </div>
-      <div className={styles['header__icon-container']}><HappyFace /></div>
+      <div className={styles['header__icon-container']}>
+        <Link to="happy" className={styles['header__link']}>
+          <HappyFace />
+        </Link>
+      </div>
     </header>
   );
 };
