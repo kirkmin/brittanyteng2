@@ -153,7 +153,7 @@ const Teamwork = props => {
             <h4 className={styles['centered-circle-subheader']}>Soft Release NPS</h4>
           </div>
         </div>
-        <div className={[styles['pages__text'], styles['text--centered-rectangle'], styles['text--desktop-only']].join(' ')}>
+        <div className={[styles['pages__text'], styles['text--centered-rectangle'], styles['text--testimonial-first']].join(' ')}>
           <div className={styles['pages__text__centered-rectangle']}>
             <div className={styles['centered-rectangle-avatar']}><Avatar1 /></div>
             <div className={styles['centered-rectangle-text']}>

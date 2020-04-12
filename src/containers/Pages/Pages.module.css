@@ -22,6 +22,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 24px;
     margin-right: -3.2%;
     max-width: 525px;
     align-self: center;
@@ -31,6 +32,10 @@
     width: 46.8%;
     margin-right: 3.2%;
     position: relative;
+}
+
+.pages__text__container.container--testimonials .pages__text.text--centered-rectangle.text--testimonial-first {
+    display: none;
 }
 
 .pages__text__container.container--testimonials .pages__text.text--centered-circle {
@@ -175,7 +180,8 @@
 .pages__text__centered-circle .centered-circle-subheader {
     font-weight: normal;
     font-size: 25px;
-    line-height: 45px;
+    line-height: 30px;
+    padding: 0 10%;
 }
 
 .pages__text__centered-circle {
@@ -313,27 +319,6 @@ br.br-mobile-only {
 
     .pages__text__container.container--extra-margins.container--more-margins {
         margin: 12px 10% 80px;
-    }
-
-    .pages__text__container.container--testimonials {
-        max-width: none;
-        flex-wrap: nowrap;
-    }
-
-    .pages__text__container.container--extra-margins.container--testimonials {
-        margin-right: 5.1%;
-    }
-
-    .pages__text__container.container--testimonials .pages__text.text--centered-circle {
-        order: 0;
-        margin-right: 3.2%;
-        padding-top: 21.8%;
-        align-self: center;
-        width: 25%;
-    }
-
-    .pages__text__container.container--testimonials .pages__text.text--centered-rectangle {
-        width: 25%;
     }
 
     .centered-rectangle-text {
@@ -477,11 +462,6 @@ br.br-mobile-only {
         margin-top: 12px;
     }
 
-    .pages__text__centered-circle .centered-circle-subheader {
-        font-size: 25px;
-        line-height: 45px;
-    }
-
     .pages__text.text--centered-boxed {
         padding-top: 0;
         margin-bottom: 0;
@@ -497,6 +477,11 @@ br.br-mobile-only {
     .pages__text.text--centered-circle {
         padding-top: 100%;
         margin: 0;
+    }
+
+    .pages__text__container.container--testimonials .pages__text.text--centered-circle {
+        margin: 12px 20%;
+        padding-top: 60%;
     }
 
     .text--only-desktop {
@@ -525,6 +510,32 @@ br.br-mobile-only {
 }
 
 @media only screen and (min-width: 1024px) {
+    .pages__text__container.container--testimonials {
+        max-width: none;
+        flex-wrap: nowrap;
+    }
+
+    .pages__text__container.container--extra-margins.container--testimonials {
+        margin-right: 5.1%;
+    }
+
+    .pages__text__container.container--testimonials .pages__text.text--centered-circle {
+        order: 0;
+        margin-right: 3.2%;
+        margin-left: 0;
+        padding-top: 21.8%;
+        align-self: center;
+        width: 25%;
+    }
+
+    .pages__text__container.container--testimonials .pages__text.text--centered-rectangle {
+        width: 25%;
+    }
+
+    .pages__text__container.container--testimonials .pages__text.text--centered-rectangle.text--testimonial-first {
+        display: block;
+    }
+
     .pages__text__container.container--lefty-grid.container--only-for-large {
         grid-template-columns: 2fr 1fr;
     }
