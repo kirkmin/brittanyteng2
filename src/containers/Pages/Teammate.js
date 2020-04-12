@@ -71,12 +71,12 @@ const Teammate = props => {
         </h4>
       </div>
       <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--lefty-grid'], styles['container--little-margin-bottom']].join(' ')}>
-        <ImgWrapper left stretch gridItem mobileMarginTop src={Teammate_4} />
-        <ImgWrapper right stretch gridItem mobileMarginTop src={Teammate_5} />
+        <ImgWrapper left gridItem mobileMarginTop src={Teammate_4} />
+        <ImgWrapper right gridItem mobileMarginTop src={Teammate_5} />
       </div>
       <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--righty-grid'], styles['container--little-margin-top']].join(' ')}>
-        <ImgWrapper left stretch gridItem mobileMarginTop src={Teammate_6} />
-        <ImgWrapper right stretch gridItem mobileMarginTop src={Teammate_7} />
+        <ImgWrapper left gridItem mobileMarginTop src={Teammate_6} />
+        <ImgWrapper right gridItem mobileMarginTop src={Teammate_7} />
       </div>
       <hr/>
       <div className={[styles['pages__text__container'], styles['container--extra-margins']].join(' ')}>
@@ -114,8 +114,8 @@ const Teammate = props => {
         </h4>
       </div>
       <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--lefty-grid'], styles['container--little-margin-top']].join(' ')}>
-        <ImgWrapper left stretch gridItem mobileMarginTop src={Teammate_13} />
-        <ImgWrapper right stretch gridItem mobileMarginTop src={Teammate_14} />
+        <ImgWrapper left gridItem mobileMarginTop src={Teammate_13} />
+        <ImgWrapper right gridItem mobileMarginTop src={Teammate_14} />
       </div>
     </div>
   );

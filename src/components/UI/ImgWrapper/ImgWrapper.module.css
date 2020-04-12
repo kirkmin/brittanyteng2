@@ -133,6 +133,11 @@
     .wrapper--desktop-extra-margin-bottom {
         margin-bottom: 72px
     }
+
+    .wrapper--align-centered {
+        align-self: center;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
