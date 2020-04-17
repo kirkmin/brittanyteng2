@@ -51,14 +51,16 @@ const Teammate = props => {
       </div>
       <hr/>
       <div className={[styles['pages__text__container'], styles['container--extra-margins'], styles['container--little-margin-bottom']].join(' ')}>
-        <h3 className={[styles['pages__text'], styles['text--left'], styles['text--greater']].join(' ')}>
-          How did we do this?
-        </h3>
+        <div className={[styles['pages__text'], styles['text--left'], styles['text--greater'], styles['text--space-between']].join(' ')}>
+          <h3 className={[styles['pages__text'], styles['text--greater']].join(' ')}>How did we do this?</h3>
+          <h3 className={[styles['pages__text'], styles['text--greater'], styles['text--desktop-only']].join(' ')}>Inclusive<br/>Seamless<br/>Playful<br/>Confident<br/></h3>
+        </div>
         <h4 className={[styles['pages__text'], styles['text--right'], styles['text--lesser']].join(' ')}>
           After interviewing stakeholders and assessing the current brand, Marketing and Design collaborated to  pivot the brand to cultivate new relationships.<br/><br/>
           As a first step, we renamed the company to encompass the range of sports we offered and the sports we are planning to offer in the future. At this time we were simultaneously designing our internal tool, Teamwork, so we knew we wanted the two names and identities to intersect.<br/><br/>
           We established 4 brand attributes to unite our audience and represent our product and story.
         </h4>
+        <h3 className={[styles['pages__text'], styles['text--mobile-only'], styles['text--centered'], styles['text--greater']].join(' ')}>Inclusive<br/>Seamless<br/>Playful<br/>Confident<br/></h3>
       </div>
       <ImgWrapper extraMargins mobileMarginTop desktopExtraMarginTop desktopExtraMarginBottom src={Teammate_3} />
       <hr/>

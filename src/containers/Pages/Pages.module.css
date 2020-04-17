@@ -108,6 +108,11 @@
     display: none;
 }
 
+.pages__text.text--centered {
+    width: 100%;
+    text-align: center;
+}
+
 .pages__text.text--title,
 .pages__text.text--random-header,
 .pages__text__container .pages__text.text--greater {
@@ -115,6 +120,12 @@
     line-height: 30px;
     letter-spacing: -0.5px;
     margin: 11px 0;
+}
+
+.pages__text__container .pages__text.text--greater.text--space-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .pages__text.text--random-header {
@@ -361,6 +372,10 @@ br.br-mobile-only {
 
     .pages__text.text--desktop-only {
         display: block;
+    }
+
+    .pages__text.text--mobile-only {
+        display: none;
     }
 
     .pages__text.text--title {
