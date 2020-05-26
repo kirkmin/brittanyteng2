@@ -8,6 +8,8 @@ import Daily_0 from "../../assets/images/Daily/Daily_0.png";
 import Daily_8 from "../../assets/images/Daily/Daily_8.png";
 import Athlete_0 from "../../assets/images/Athlete/Athlete_0.jpg";
 import Athlete_15 from "../../assets/images/Athlete/Athlete_15.png";
+import Breadblok_0 from "../../assets/images/Breadblok/Breadblok_0.png";
+import Breadblok_7 from "../../assets/images/Breadblok/Breadblok_7.png";
 import Design_0 from "../../assets/images/Design/Design_0.png";
 import Design_11 from "../../assets/images/Design/Design_11.png";
 import Teamwork_0 from "../../assets/images/Teamwork/Teamwork_0.png";
@@ -55,16 +57,16 @@ const Home = props => {
           </div>
         </div>
       </Link>
-      <Link to="design">
+      <Link to="breadblok">
         <div className={styles['link__content__container']}>
-          <div className={[styles['link__content'], styles['content--big']].join(' ')}>
-            <ImgWrapper src={Design_0} />
-          </div>
-          <div className={[styles['link__content'], styles['content--small'], styles['content--first-on-desktop']].join(' ')}>
-            <ImgWrapper src={Design_11} desktopOnly />
+          <div className={[styles['link__content'], styles['content--small'], styles['content--mobile-order-last']].join(' ')}>
+            <ImgWrapper src={Breadblok_7} desktopOnly />
             <h3 className={[styles['link__content__text'], styles['text--title']].join(' ')}>
-              BallerTV Design System
+              Breadblok
             </h3>
+          </div>
+          <div className={[styles['link__content'], styles['content--big']].join(' ')}>
+            <ImgWrapper src={Breadblok_0} />
           </div>
         </div>
       </Link>
@@ -81,13 +83,26 @@ const Home = props => {
           </div>
         </div>
       </Link>
+      <Link to="design">
+        <div className={styles['link__content__container']}>
+          <div className={[styles['link__content'], styles['content--big']].join(' ')}>
+            <ImgWrapper src={Design_0} />
+          </div>
+          <div className={[styles['link__content'], styles['content--small'], styles['content--first-on-desktop']].join(' ')}>
+            <ImgWrapper src={Design_11} desktopOnly />
+            <h3 className={[styles['link__content__text'], styles['text--title']].join(' ')}>
+              BallerTV Design System
+            </h3>
+          </div>
+        </div>
+      </Link>
       <Link to="teammate">
         <div className={styles['link__content__container']}>
           <div className={[styles['link__content'], styles['content--big']].join(' ')}>
-            <ImgWrapper src={Teammate_0} />
+            <ImgWrapper src={Teammate_15} />
           </div>
-          <div className={[styles['link__content'], styles['content--small'], styles['content--first-on-desktop']].join(' ')}>
-            <ImgWrapper src={Teammate_15} desktopOnly />
+          <div className={[styles['link__content'], styles['content--small']].join(' ')}>
+            <ImgWrapper src={Teammate_0} desktopOnly />
             <h3 className={[styles['link__content__text'], styles['text--title']].join(' ')}>
               Teammate
             </h3>
@@ -99,7 +114,7 @@ const Home = props => {
           <div className={[styles['link__content'], styles['content--big']].join(' ')}>
             <ImgWrapper src={Craft_11} />
           </div>
-          <div className={[styles['link__content'], styles['content--small']].join(' ')}>
+          <div className={[styles['link__content'], styles['content--small'], styles['content--first-on-desktop']].join(' ')}>
             <ImgWrapper src={Craft_0} desktopOnly />
             <h3 className={[styles['link__content__text'], styles['text--title']].join(' ')}>
               Contemporary Craft Center
@@ -109,14 +124,14 @@ const Home = props => {
       </Link>
       <Link to="transcendent">
         <div className={styles['link__content__container']}>
-          <div className={[styles['link__content'], styles['content--small'], styles['content--mobile-order-last']].join(' ')}>
+          <div className={[styles['link__content'], styles['content--big']].join(' ')}>
+            <ImgWrapper src={Transcendent_5} />
+          </div>
+          <div className={[styles['link__content'], styles['content--small']].join(' ')}>
             <ImgWrapper src={Transcendent_2} desktopOnly />
             <h3 className={[styles['link__content__text'], styles['text--title']].join(' ')}>
               Transcendent Material
             </h3>
-          </div>
-          <div className={[styles['link__content'], styles['content--big']].join(' ')}>
-            <ImgWrapper src={Transcendent_5} />
           </div>
         </div>
       </Link>

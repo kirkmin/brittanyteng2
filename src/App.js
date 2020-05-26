@@ -12,6 +12,7 @@ import Teammate from './containers/Pages/Teammate';
 import Transcendent from './containers/Pages/Transcendent';
 import Craft from './containers/Pages/Craft';
 import Happy from './containers/Pages/Happy';
+import Breadblok from './containers/Pages/Breadblok';
 
 class App extends Component {
   render () {
@@ -30,6 +31,7 @@ class App extends Component {
               <Route path="/transcendent" render={(props) => <Transcendent {...props} setMainBackground={setMainBackground} />} />
               <Route path="/craft" render={(props) => <Craft {...props} setMainBackground={setMainBackground} />} />
               <Route path="/happy" render={(props) => <Happy {...props} setMainBackground={setMainBackground} />} />
+              <Route path="/breadblok" render={(props) => <Breadblok {...props} setMainBackground={setMainBackground} />} />
               <Redirect to="/" />
             </Switch>
           )}
