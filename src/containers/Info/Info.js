@@ -13,7 +13,7 @@ const Info = props => {
   return (
     <div className={styles["info"]}>
       <h2 className={styles["info__text"]}>
-        Brittany Teng is a product designer based in Los Angeles. She previously worked at MoMA, Gretel, Uber ATG, and has spent the last year at a startup. She approaches design the same way she approaches dogs. Hands-on.
+        Brittany Teng is a creative based in Los Angeles. She specializes in digital design, branding, campaigns, and occasionally dabbles in ceramics. Currently, she's a senior designer at Elephant. She approaches design the same way she approaches dogs. Hands-on.
       </h2>
       <h2 className={styles["info__text"]}>
         Email her at hi@brittanyteng.com
