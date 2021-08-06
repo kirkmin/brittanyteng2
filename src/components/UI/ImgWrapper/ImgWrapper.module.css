@@ -4,16 +4,32 @@
     display: flex;
 }
 
+.wrapper--page {
+    width: 100%;
+    max-width: 894px;
+    margin: 0 auto 16px;
+}
+
 .wrapper--desktop-only {
     display: none;
 }
 
-.img {
+.img__wrapper .img {
     width: 100%;
     height: 100%;
 }
 
-.wrapper--box-shadow {
+@media only screen and (min-width: 768px) {
+    .wrapper--page {
+        margin-bottom: 36px;
+    }
+
+    .wrapper--desktop-only {
+        display: flex;
+    }
+}
+
+/* .wrapper--box-shadow {
     box-shadow: 0 0 1px 0 grey;
 }
 
@@ -156,4 +172,4 @@
         grid-row: 2 / 4;
         margin-bottom: 0;
     }
-}
+} */

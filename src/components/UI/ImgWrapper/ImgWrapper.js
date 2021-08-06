@@ -8,22 +8,23 @@ let cx = classNames.bind(styles);
 const ImgWrapper = (props) => {
   const classes = cx({
     "img__wrapper": true,
-    "wrapper--right": props.right,
-    "wrapper--left": props.left,
-    "wrapper--desktop-only": props.desktopOnly,
-    "wrapper--extra-margins": props.extraMargins,
-    "wrapper--box-shadow": props.boxShadow,
-    "wrapper--grid-item": props.gridItem,
-    "wrapper--top-right": props.topRight,
-    "wrapper--bottom-left": props.bottomLeft,
-    "wrapper--mobile-top": props.mobileTop,
-    "wrapper--mobile-margin-top": props.mobileMarginTop,
-    "wrapper--mobile-margin-bottom": props.mobileMarginBottom,
-    "wrapper--desktop-extra-margin-top": props.desktopExtraMarginTop,
-    "wrapper--desktop-extra-margin-bottom": props.desktopExtraMarginBottom,
-    "wrapper--stretch": props.stretch,
-    "wrapper--illustration": props.illustration,
-    "wrapper--align-centered": props.alignCentered
+    "wrapper--page": props.page
+    // "wrapper--right": props.right,
+    // "wrapper--left": props.left,
+    // "wrapper--desktop-only": props.desktopOnly,
+    // "wrapper--extra-margins": props.extraMargins,
+    // "wrapper--box-shadow": props.boxShadow,
+    // "wrapper--grid-item": props.gridItem,
+    // "wrapper--top-right": props.topRight,
+    // "wrapper--bottom-left": props.bottomLeft,
+    // "wrapper--mobile-top": props.mobileTop,
+    // "wrapper--mobile-margin-top": props.mobileMarginTop,
+    // "wrapper--mobile-margin-bottom": props.mobileMarginBottom,
+    // "wrapper--desktop-extra-margin-top": props.desktopExtraMarginTop,
+    // "wrapper--desktop-extra-margin-bottom": props.desktopExtraMarginBottom,
+    // "wrapper--stretch": props.stretch,
+    // "wrapper--illustration": props.illustration,
+    // "wrapper--align-centered": props.alignCentered
   });
 
   let Wrapper = (
