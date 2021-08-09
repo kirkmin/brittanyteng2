@@ -28,7 +28,13 @@ const Breadblok = props => {
             <TextBlock
                 headerText="BREADBLOK"
                 subheaderText="Branding, UI/UX"
-                paragraphText={<>Breadblok is an organic, gluten-free bakery in Santa Monica, CA. They produce a wide offering of baked goods and entrees for those who are gluten-free — as well as those with other food sensitivities.<br /><br />Currently, their visual identity does not do its products justice, so I challenged myself to create a brand and digital experience that reflects the thoughtfulness and comfort they bring to their customers.</>}
+                paragraphText={
+                    <>
+                        Breadblok is an organic, gluten-free bakery in Santa Monica, CA. They produce a wide offering of baked goods and entrees for those who are gluten-free — as well as those with other food sensitivities.
+                        <br /><br />
+                        Currently, their visual identity does not do its products justice, so I challenged myself to create a brand and digital experience that reflects the thoughtfulness and comfort they bring to their customers.
+                    </>
+                }
             />
             <ImgWrapper src={Breadblok_1} page />
             <ImgWrapper src={Breadblok_2} page />

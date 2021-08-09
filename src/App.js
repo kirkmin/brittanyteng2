@@ -6,12 +6,10 @@ import Home from './containers/Home/Home';
 import Info from './containers/Info/Info';
 import Daily from './containers/Pages/Daily';
 import Athlete from './containers/Pages/Athlete';
-import Design from './containers/Pages/Design';
 import Teamwork from './containers/Pages/Teamwork';
-import Teammate from './containers/Pages/Teammate';
 import Transcendent from './containers/Pages/Transcendent';
 import Craft from './containers/Pages/Craft';
-import Happy from './containers/Pages/Happy';
+import Happy from './containers/Happy/Happy';
 import Breadblok from './containers/Pages/Breadblok';
 
 class App extends Component {
@@ -25,9 +23,7 @@ class App extends Component {
               <Route path="/info" render={(props) => <Info {...props} setMainBackground={setMainBackground} />} />
               <Route path="/daily" render={(props) => <Daily {...props} setMainBackground={setMainBackground} />} />
               <Route path="/athlete" render={(props) => <Athlete {...props} setMainBackground={setMainBackground} />} />
-              <Route path="/design" render={(props) => <Design {...props} setMainBackground={setMainBackground} />} />
               <Route path="/teamwork" render={(props) => <Teamwork {...props} setMainBackground={setMainBackground} />} />
-              <Route path="/teammate" render={(props) => <Teammate {...props} setMainBackground={setMainBackground} />} />
               <Route path="/transcendent" render={(props) => <Transcendent {...props} setMainBackground={setMainBackground} />} />
               <Route path="/craft" render={(props) => <Craft {...props} setMainBackground={setMainBackground} />} />
               <Route path="/happy" render={(props) => <Happy {...props} setMainBackground={setMainBackground} />} />
