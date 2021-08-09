@@ -6,30 +6,34 @@ import styles from './ImgWrapper.module.css';
 let cx = classNames.bind(styles);
 
 const ImgWrapper = (props) => {
-  const classes = cx({
-    "img__wrapper": true,
-    "wrapper--page": props.page,
-    "wrapper--home": props.home,
-    "wrapper--mobile": props.mobile,
-    "wrapper--desktop": props.desktop
-  });
+    if (!props.src) return null;
 
-  let Wrapper = (
-    <div className={classes}>
-      <img className={styles.img} src={props.src} alt="" />
-    </div>
-  );
-  if (props.mp4 || props.mov) {
-    Wrapper = (
-      <div className={classes}>
-        <video className={styles.img} src={props.src} muted autoPlay loop playsInline controls >
-          <source src={props.src} type={props.mp4 ? "video/mp4" : "video/mov"} />
-        </video>
-      </div>
+    const classes = cx({
+        "img__wrapper": true,
+        "wrapper--page": props.page,
+        "wrapper--home": props.home,
+        "wrapper--mobile": props.mobile,
+        "wrapper--desktop": props.desktop,
+        "wrapper--half": props.half,
+        "wrapper--fixed": props.fixed,
+    });
+
+    let Wrapper = (
+        <div className={classes}>
+            <img className={styles.img} src={props.src} alt="" />
+        </div>
     );
-  }
+    if (props.mp4 || props.mov) {
+        Wrapper = (
+            <div className={classes}>
+                <video className={styles.img} src={props.src} muted autoPlay loop playsInline controls >
+                    <source src={props.src} type={props.mp4 ? "video/mp4" : "video/mov"} />
+                </video>
+            </div>
+        );
+    }
 
-  return Wrapper;
+    return Wrapper;
 };
 
 export default ImgWrapper;

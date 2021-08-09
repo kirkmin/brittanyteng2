@@ -4,6 +4,16 @@
     text-decoration: none;
 }
 
+.home-link:hover .line {
+    background: #FAFAFA;
+}
+
+.home-link:hover .header,
+.home-link:hover .subheader {
+    color: #FAFAFA;
+}
+
+
 .line {
     display: block;
     width: 100%;
@@ -26,4 +36,15 @@
     letter-spacing: -0.4px;
     line-height: 24px;
     margin: 0 0 20px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .home-link {
+        padding-bottom: 20px;
+    }
+
+    .subheader {
+        margin-bottom: 0;
+    }
 }
