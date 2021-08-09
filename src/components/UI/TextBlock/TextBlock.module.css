@@ -12,7 +12,7 @@
     grid-row: 1 / 2;
     font-weight: bold;
     font-size: 24px;
-    color: #0e0e0e;
+    color: #000000;
     letter-spacing: -0.48px;
     line-height: 26px;
     margin: 0 0 5px;
@@ -33,7 +33,7 @@
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     font-size: 18px;
-    color: #0e0e0e;
+    color: #000000;
     letter-spacing: -0.36px;
     line-height: 22px;
     margin: 0 0 33px;

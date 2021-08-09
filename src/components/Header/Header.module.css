@@ -16,7 +16,21 @@
     background: #53FF8B;
 }
 
-.header--white .header__link:hover .header__link__content {
+.header--black {
+    background: #000000;
+}
+
+.header--black .header__link__content {
+    border-color: #FAFAFA;
+    color: #FAFAFA;
+}
+
+.header--black .header__icon-container svg g {
+    stroke: #FAFAFA;
+}
+
+.header--white .header__link:hover .header__link__content,
+.header--black .header__link:hover .header__link__content {
     border-color: #53FF8B;
     color: #53FF8B;
 }
@@ -26,7 +40,8 @@
     color: #FAFAFA;
 }
 
-.header--white .header__icon-container:hover svg g {
+.header--white .header__icon-container:hover svg g,
+.header--black .header__icon-container:hover svg g {
     stroke: #53FF8B;
 }
 
@@ -69,11 +84,11 @@
     font-size: 28px;
     line-height: 38px;
     border-radius: 36px;
-    border: solid 2px #0E0E0E;
+    border: solid 2px #000000;
     min-width: 36px;
     box-sizing: border-box;
     padding: 0 8px;
-    color: #0E0E0E;
+    color: #000000;
     overflow: hidden;
 }
 
@@ -101,7 +116,7 @@
     .header__link__content {
         font-size: 35px;
         line-height: 45px;
-        border: solid 3px #0E0E0E;
+        border: solid 3px #000000;
         border-radius: 43px;
         min-width: 43px;
     }
@@ -140,7 +155,7 @@
         font-size: 50px;
         line-height: 65px;
         letter-spacing: -1px;
-        border: solid 4px #0E0E0E;
+        border: solid 4px #000000;
         border-radius: 62px;
         min-width: 62px;
     }

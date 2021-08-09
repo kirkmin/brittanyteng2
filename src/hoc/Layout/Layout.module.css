@@ -1,16 +1,20 @@
 .main {
-  font-family: FaktPro, Helvetica, sans-serif;
-  min-width: 320px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+    font-family: FaktPro, Helvetica, sans-serif;
+    min-width: 320px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 .main--white {
-  background: #FAFAFA;
+    background: #fafafa;
 }
 
 .main--green {
-  background: #53FF8B;
+    background: #53ff8b;
+}
+
+.main--black {
+    background: #000000;
 }

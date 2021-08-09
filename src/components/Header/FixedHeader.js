@@ -13,6 +13,7 @@ const FixedHeader = props => {
     "header--fixed": true,
     "header--white": props.background === "white",
     "header--green": props.background === "green",
+    "header--black": props.background === "black",
     "header--fixed-slide": props.fixedSlide,
     "header--fixed-show": props.fixedShow
   });
@@ -23,11 +24,6 @@ const FixedHeader = props => {
         <Link to="/" className={styles['header__link']}>
           <div className={styles['header__link__content']}>B</div>
           <div className={[styles['header__link__content'], styles['content--teng']].join(' ')}>TENG</div>
-        </Link>
-      </div>
-      <div className={[styles['header__link__container'], styles['container--info']].join(' ')}>
-        <Link to="info" className={styles['header__link']}>
-          <div className={[styles['header__link__content'], styles['content--info']].join(' ')}>Info</div>
         </Link>
       </div>
       <div className={styles['header__icon-container']}>
