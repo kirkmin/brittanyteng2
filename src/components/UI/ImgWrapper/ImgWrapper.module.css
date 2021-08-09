@@ -10,8 +10,17 @@
     margin: 0 auto 16px;
 }
 
-.wrapper--desktop-only {
+.wrapper--home {
+    width: 100%;
+    margin: 0 auto 44px;
+}
+
+.wrapper--desktop {
     display: none;
+}
+
+.wrapper--mobile {
+    display: flex;
 }
 
 .img__wrapper .img {
@@ -24,7 +33,7 @@
         margin-bottom: 36px;
     }
 
-    .wrapper--desktop-only {
-        display: flex;
+    .wrapper--mobile {
+        display: none;
     }
 }

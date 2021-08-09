@@ -8,7 +8,10 @@ let cx = classNames.bind(styles);
 const ImgWrapper = (props) => {
   const classes = cx({
     "img__wrapper": true,
-    "wrapper--page": props.page
+    "wrapper--page": props.page,
+    "wrapper--home": props.home,
+    "wrapper--mobile": props.mobile,
+    "wrapper--desktop": props.desktop
   });
 
   let Wrapper = (

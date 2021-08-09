@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 import styles from './Password.module.css';
-import { ReactComponent as ArrowDisabled } from '../../../assets/images/arrow-right-icon.svg';
-import { ReactComponent as ArrowEnabled } from '../../../assets/images/arrow-right-filled-icon.svg';
+import { ReactComponent as ArrowDisabled } from '../../assets/images/arrow-right-icon.svg';
+import { ReactComponent as ArrowEnabled } from '../../assets/images/arrow-right-filled-icon.svg';
 
 const Password = ({ onCorrect }) => {
     const [showError, setShowError] = useState(false);

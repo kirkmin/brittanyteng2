@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import Password from '../../components/UI/Password/Password';
+import Password from '../../components/Password/Password';
 import Hero from '../../components/UI/Hero/Hero';
 import TextBlock from '../../components/UI/TextBlock/TextBlock';
 import ImgWrapper from '../../components/UI/ImgWrapper/ImgWrapper';

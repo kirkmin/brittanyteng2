@@ -1,74 +1,22 @@
-.home__container {
+.home {
     padding: 20px 4.2% 0;
     display: flex;
     flex-direction: column;
 }
 
-.link__content__container {
-    display: flex;
-    flex-direction: column;
-}
-
-.link__content__text {
-    font-family: "FaktPro";
-    font-size: 25px;
-    line-height: 30px;
-    letter-spacing: -0.5px;
+.home__paragraph {
+    font-size: 19px;
     color: #000000;
-    font-weight: normal;
-    margin-top: -1px;
-    margin-bottom: 15px;
+    letter-spacing: -0.38px;
+    line-height: 23px;
+    margin: 0 0 40px;
 }
 
-.link__content__text__italic {
-    font-family: "FaktPro-Italic";
-}
-
-.content--mobile-order-last {
-    order: 1;
-}
 
 @media only screen and (min-width: 768px) {
-    .home__container {
-        padding: 30px 3.2%;
-    }
-
-    .link__content__container {
-        flex-direction: row;
-        margin-right: -1.6%;
-    }
-
-    .link__content {
-        margin-right: 1.6%;
-    }
-
-    .content--first-on-desktop {
-        order: -1;
-    }
-
-    .content--big {
-        flex: 1 1 66%;
-    }
-
-    .content--small {
-        flex: 1 1 33%;
-    }
-
-    .link__content__text {
-        font-size: 38px;
-        letter-spacing: -1px;
-        line-height: 43px;
-    }
-
-    .content--mobile-order-last {
-        order: 0;
-    }
-}
-
-@media only screen and (min-width: 1000px) {
-
-    .link__content__text {
-        font-size: 50px;
-        line-height: 55px;
+    .home__paragraph {
+        font-size: 24px;
+        letter-spacing: -0.48px;
+        line-height: 28px;
     }
 }
