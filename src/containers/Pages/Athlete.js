@@ -7,7 +7,7 @@ import ImgWrapper from '../../components/UI/ImgWrapper/ImgWrapper';
 
 import styles from './Pages.module.css';
 import Athlete_0 from "../../assets/images/Athlete/Athlete_0.jpg";
-import Athlete_1 from "../../assets/images/Athlete/Athlete_1.jpg";
+import Athlete_1 from "../../assets/images/Athlete/Athlete_1.png";
 import Athlete_2 from "../../assets/images/Athlete/Athlete_2.jpg";
 import Athlete_3 from "../../assets/images/Athlete/Athlete_3.jpg";
 import Athlete_4 from "../../assets/images/Athlete/Athlete_4.jpg";
@@ -18,7 +18,7 @@ import Athlete_8 from "../../assets/images/Athlete/Athlete_8.gif";
 import Athlete_9 from "../../assets/images/Athlete/Athlete_9.jpg";
 import Athlete_10 from "../../assets/images/Athlete/Athlete_10.jpg";
 import Athlete_11 from "../../assets/images/Athlete/Athlete_11.jpg";
-import Athlete_12 from "../../assets/images/Athlete/Athlete_12.jpg";
+import Athlete_12 from "../../assets/images/Athlete/Athlete_12.png";
 
 const Athlete = props => {
     const setBackground = props.setMainBackground;

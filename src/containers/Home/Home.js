@@ -7,9 +7,9 @@ import styles from './Home.module.css';
 import Daily_0 from "../../assets/images/Daily/Daily_0.jpg";
 import Apple_7 from "../../assets/images/Apple/Apple_7.jpg";
 import Apple_8 from "../../assets/images/Apple/Apple_8.jpg";
-import Breadblok_0 from "../../assets/images/Breadblok/Breadblok_0.jpg";
+import Breadblok_0 from "../../assets/images/Breadblok/Breadblok_0.png";
 import Athlete_0 from "../../assets/images/Athlete/Athlete_0.jpg";
-import Craft_0 from '../../assets/images/Craft/Craft_0.jpg';
+import Craft_0 from '../../assets/images/Craft/Craft_0.png';
 import Transcendent_0 from '../../assets/images/Transcendent/Transcendent_0.jpg';
 import Teamwork_0 from '../../assets/images/Teamwork/Teamwork_0.jpg'
 
@@ -28,7 +28,7 @@ const Home = props => {
                 <ImgWrapper src={currentSrc} desktop fixed half={currentSrc === Apple_8} />
             </div>
             <div className={[styles["home__section"], styles["section--right"]].join(" ")}>
-                <p className={styles["home__paragraph"]}>Brittany Teng is a creative based in Los Angeles specializing in UI/UX, branding, campaigns, and dabbling in ceramics. She approaches design the same way she approaches dogs. Hands-on. Email her at hi@brittanyteng.com.</p>
+                <p className={styles["home__paragraph"]}>Brittany Teng is a creative based in Los Angeles specializing in UI/UX, branding, campaigns, and dabbling in ceramics. She approaches design the same way she approaches dogs. Hands-on. Connect with her at hi@brittanyteng.com.</p>
                 <div className={styles["home__links-container"]}>
                     <HomeLink
                         to="daily"

@@ -1,52 +1,139 @@
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
-button, a {
-  cursor: pointer;
+button,
+a {
+    cursor: pointer;
 }
 
-button, input, textarea {
-  outline: none;
-  border: none;
+button,
+input,
+textarea {
+    outline: none;
+    border: none;
 }
 
-h1, h2, h3, h4, h5, h6, p, input, textarea, label {
-  font-weight: normal;
-  display: inline-block;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+textarea,
+label {
+    font-weight: normal;
+    display: inline-block;
 }
 
 body {
-  font-family: "FaktPro", sans-serif;
+    font-family: "FaktPro", sans-serif;
 }
 
 #root {
-  overflow: auto;
+    overflow: auto;
 }
 
 @font-face {
-  font-family: "FaktPro";
-  src: url("./assets/fonts/FaktPro-Normal.otf") format("opentype");
+    font-family: "FaktPro";
+    src: url("./assets/fonts/FaktPro-Normal.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "FaktPro-Italic";
-  src: url("./assets/fonts/FaktPro-NormalItalic.otf") format("opentype");
+    font-family: "FaktPro";
+    src: url("./assets/fonts/FaktPro-NormalItalic.otf") format("opentype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FaktPro";
+    src: url("./assets/fonts/FaktPro-Medium.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FaktPro-Italic";
+    src: url("./assets/fonts/FaktPro-MediumItalic.otf") format("opentype");
+    font-weight: bold;
+    font-style: italic;
 }

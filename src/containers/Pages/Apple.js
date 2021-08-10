@@ -6,13 +6,13 @@ import TextBlock from '../../components/UI/TextBlock/TextBlock';
 import ImgWrapper from '../../components/UI/ImgWrapper/ImgWrapper';
 
 import styles from './Pages.module.css';
-import Apple_0 from "../../assets/images/Apple/Apple_0.jpg";
-import Apple_1 from "../../assets/images/Apple/Apple_1.jpg";
-import Apple_2 from "../../assets/images/Apple/Apple_2.jpg";
-import Apple_3 from "../../assets/images/Apple/Apple_3.jpg";
-import Apple_4 from "../../assets/images/Apple/Apple_4.jpg";
-import Apple_5 from "../../assets/images/Apple/Apple_5.jpg";
-import Apple_6 from "../../assets/images/Apple/Apple_6.jpg";
+import Apple_0 from "../../assets/images/Apple/Apple_0.png";
+import Apple_1 from "../../assets/images/Apple/Apple_1.mp4";
+import Apple_2 from "../../assets/images/Apple/Apple_2.png";
+import Apple_3 from "../../assets/images/Apple/Apple_3.png";
+import Apple_4 from "../../assets/images/Apple/Apple_4.png";
+import Apple_5 from "../../assets/images/Apple/Apple_5.png";
+import Apple_6 from "../../assets/images/Apple/Apple_6.png";
 
 const Apple = props => {
     const [passed, setPassed] = useState(false);
@@ -39,7 +39,7 @@ const Apple = props => {
                     </>
                 }
             />
-            <ImgWrapper src={Apple_1} page />
+            <ImgWrapper src={Apple_1} page mp4 />
             <ImgWrapper src={Apple_2} page />
             <ImgWrapper src={Apple_3} page />
             <ImgWrapper src={Apple_4} page />

@@ -26,7 +26,7 @@ const Daily = props => {
         <div className={styles['page']}>
             <Hero src={Daily_0} />
             <TextBlock
-                headerText="THE DAILY FROM THE NEW YORK TIMES"
+                headerText="THE DAILY BY THE NEW YORK TIMES"
                 subheaderText="Print, OOH Campaign"
                 paragraphText={
                     <>

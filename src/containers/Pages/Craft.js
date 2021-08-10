@@ -5,7 +5,7 @@ import TextBlock from '../../components/UI/TextBlock/TextBlock';
 import ImgWrapper from '../../components/UI/ImgWrapper/ImgWrapper';
 
 import styles from './Pages.module.css';
-import Craft_0 from "../../assets/images/Craft/Craft_0.jpg";
+import Craft_0 from "../../assets/images/Craft/Craft_0.png";
 import Craft_1 from "../../assets/images/Craft/Craft_1.jpg";
 import Craft_2 from "../../assets/images/Craft/Craft_2.gif";
 import Craft_3 from "../../assets/images/Craft/Craft_3.jpg";

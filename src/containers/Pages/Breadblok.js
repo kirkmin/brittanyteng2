@@ -5,14 +5,14 @@ import TextBlock from '../../components/UI/TextBlock/TextBlock';
 import ImgWrapper from '../../components/UI/ImgWrapper/ImgWrapper';
 
 import styles from './Pages.module.css';
-import Breadblok_0 from "../../assets/images/Breadblok/Breadblok_0.jpg";
-import Breadblok_1 from "../../assets/images/Breadblok/Breadblok_1.jpg";
-import Breadblok_2 from "../../assets/images/Breadblok/Breadblok_2.jpg";
-import Breadblok_3 from "../../assets/images/Breadblok/Breadblok_3.jpg";
-import Breadblok_4 from "../../assets/images/Breadblok/Breadblok_4.jpg";
-import Breadblok_5 from "../../assets/images/Breadblok/Breadblok_5.jpg";
-import Breadblok_6 from "../../assets/images/Breadblok/Breadblok_6.jpg";
-import Breadblok_7 from "../../assets/images/Breadblok/Breadblok_7.jpg";
+import Breadblok_0 from "../../assets/images/Breadblok/Breadblok_0.png";
+import Breadblok_1 from "../../assets/images/Breadblok/Breadblok_1.png";
+import Breadblok_2 from "../../assets/images/Breadblok/Breadblok_2.png";
+import Breadblok_3 from "../../assets/images/Breadblok/Breadblok_3.png";
+import Breadblok_4 from "../../assets/images/Breadblok/Breadblok_4.png";
+import Breadblok_5 from "../../assets/images/Breadblok/Breadblok_5.png";
+import Breadblok_6 from "../../assets/images/Breadblok/Breadblok_6.png";
+import Breadblok_7 from "../../assets/images/Breadblok/Breadblok_7.png";
 
 const Breadblok = props => {
     const setBackground = props.setMainBackground;
