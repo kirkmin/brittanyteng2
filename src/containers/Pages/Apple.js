@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
-import Password from '../../components/Password/Password';
+// import Password from '../../components/Password/Password';
 import Hero from '../../components/UI/Hero/Hero';
 import TextBlock from '../../components/UI/TextBlock/TextBlock';
 import ImgWrapper from '../../components/UI/ImgWrapper/ImgWrapper';
@@ -15,15 +15,22 @@ import Apple_5 from "../../assets/images/Apple/Apple_5.png";
 import Apple_6 from "../../assets/images/Apple/Apple_6.png";
 
 const Apple = props => {
-    const [passed, setPassed] = useState(false);
-    const setBackground = props.setMainBackground;
+    // const [passed, setPassed] = useState(false);
+    // const setBackground = props.setMainBackground;
+
+    // useEffect(() => {
+    //     setBackground(passed ? 'white' : 'black');
+    //     window.scrollTo(0, 0);
+    // }, [setBackground, passed]);
+
+    // if (!passed) return <Password onCorrect={() => { setPassed(true); }} />
+
+	const setBackground = props.setMainBackground;
 
     useEffect(() => {
-        setBackground(passed ? 'white' : 'black');
+        setBackground('white');
         window.scrollTo(0, 0);
-    }, [setBackground, passed]);
-
-    if (!passed) return <Password onCorrect={() => { setPassed(true); }} />
+    }, [setBackground]);
 
     return (
         <div className={styles['page']}>
