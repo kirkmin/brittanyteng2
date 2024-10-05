@@ -1,6 +1,0 @@
-.text-grid {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 15px 0;
-    white-space: pre-wrap;
-}

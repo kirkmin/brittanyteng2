@@ -13,7 +13,7 @@ const Layout = (props) => {
   const [currentPageYOffset, setCurrentPageYOffset] = useState(0);
 
   const prevCurrentPageYOffset = usePrevious(currentPageYOffset);
-  const [fixedHeaderRef, isFixedHeaderHovered] = useHover();
+  const [fixedHeaderRef, isFixedHeaderHovered] = useFixedHeaderHover();
 
   const scrollListener = e => {
     setCurrentPageYOffset(window.pageYOffset);
@@ -66,7 +66,7 @@ function usePrevious(value) {
   return ref.current;
 }
 
-function useHover() {
+function useFixedHeaderHover() {
   const [value, setValue] = useState(false);
 
   const ref = useRef(null);
