@@ -1,5 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { withRouter } from 'react-router';
+import useFixedHeaderHover from '../../hooks/useFixedHeaderHover';
+import { usePrefetch, usePrevious } from '../../hooks/utils';
 import Header from '../../components/Header/Header';
 import FixedHeader from '../../components/Header/FixedHeader';
 import styles from './Layout.module.css';
@@ -12,6 +14,12 @@ const Layout = (props) => {
 
   const prevCurrentScrollY = usePrevious(currentScrollY);
   const [fixedHeaderRef, isFixedHeaderHovered] = useFixedHeaderHover();
+  usePrefetch([
+    '../../images/Home/Me.png',
+    '../../images/NotWork/DogMobile.png',
+    '../../images/NotWork/DogTablet.png',
+    '../../images/NotWork/DogDesktop.png',
+  ]);
 
   const scrollListener = e => {
     setCurrentScrollY(window.scrollY);
@@ -49,46 +57,13 @@ const Layout = (props) => {
 
   return (
     <main className={[styles.main, styles['main--' + mainBackground]].join(' ')}>
-      <Header background={mainBackground} />
-      <FixedHeader background={mainBackground} fixedSlide={slideFixedHeader} fixedShow={showFixedHeader} refCallback={fixedHeaderRef} />
-      {props.children(setMainBackground)}
+      <div className={styles.content}>
+        <Header background={mainBackground} />
+        <FixedHeader background={mainBackground} fixedSlide={slideFixedHeader} fixedShow={showFixedHeader} refCallback={fixedHeaderRef} />
+        {props.children(setMainBackground)}
+      </div>
     </main>
   );
 };
-
-function usePrevious(value) {
-  const ref = useRef();
-  useEffect(() => {
-    ref.current = value;
-  });
-  return ref.current;
-}
-
-function useFixedHeaderHover() {
-  const [value, setValue] = useState(false);
-
-  const ref = useRef(null);
-
-  const handleMouseOver = () => setValue(true);
-  const handleMouseOut = () => setValue(false);
-
-  useEffect(
-    () => {
-      const node = ref.current;
-      if (node) {
-        node.addEventListener('mouseover', handleMouseOver);
-        node.addEventListener('mouseout', handleMouseOut);
-
-        return () => {
-          node.removeEventListener('mouseover', handleMouseOver);
-          node.removeEventListener('mouseout', handleMouseOut);
-        };
-      }
-    },
-    [ref]
-  );
-
-  return [ref, value];
-}
 
 export default withRouter(Layout)

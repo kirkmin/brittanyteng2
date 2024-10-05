@@ -3,9 +3,39 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
+}
+
+.content {
+  flex: 1 1 100%;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main--yellow {
   background: #D3FF55;
+}
+
+.main--dog {
+  background: #fff;
+  background-image: url('../../assets/images/NotWork/DogMobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+@media only screen and (min-width: 768px) {
+  .main--dog {
+    background-image: url('../../assets/images/NotWork/DogTablet.png');
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main--dog {
+    background-image: url('../../assets/images/NotWork/DogDesktop.png');
+  }
 }

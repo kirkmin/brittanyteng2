@@ -18,7 +18,7 @@ const Header = ({ background }) => {
         <Link to="/" className={styles['header__nav__link']}>Brittany Teng</Link>
         <div className={styles['header__nav__link-container']}>
           <Link to="/" className={styles['header__nav__link']}>Work</Link>
-          <Link to="/" className={styles['header__nav__link']}>Not work</Link>
+          <Link to="/notwork" className={styles['header__nav__link']}>Not work</Link>
         </div>
       </nav>
     </header>

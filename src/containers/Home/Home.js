@@ -4,10 +4,10 @@ import me from "../../assets/images/Home/Me.png";
 import styles from './Home.module.css';
 
 const Home = ({ setMainBackground }) => {
-	useBackground({ setMainBackground, color: 'yellow' });
+  useBackground({ setMainBackground, color: 'yellow' });
 
-	return (
-		<div className={styles["home"]}>
+  return (
+    <div className={styles["home"]}>
       <div className={styles["home__image-wrapper"]}>
         <img src={me} alt="me" />
       </div>
@@ -18,8 +18,8 @@ const Home = ({ setMainBackground }) => {
           <span style={{ display: 'block' }}>Hands-on.</span></p>
         <p>Email her at <a href= "mailto: hi@brittanyteng.com">hi@brittanyteng.com</a></p>
       </div>
-		</div>
-	);
+    </div>
+  );
 };
 
 export default Home;
