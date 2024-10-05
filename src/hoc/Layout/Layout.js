@@ -1,31 +1,29 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { withRouter } from 'react-router';
-
 import Header from '../../components/Header/Header';
 import FixedHeader from '../../components/Header/FixedHeader';
-
 import styles from './Layout.module.css';
 
 const Layout = (props) => {
-  const [mainBackground, setMainBackground] = useState('white');
+  const [mainBackground, setMainBackground] = useState('yellow');
   const [slideFixedHeader, setSlideFixedHeader] = useState(false);
   const [showFixedHeader, setShowFixedHeader] = useState(false);
-  const [currentPageYOffset, setCurrentPageYOffset] = useState(0);
+  const [currentScrollY, setCurrentScrollY] = useState(0);
 
-  const prevCurrentPageYOffset = usePrevious(currentPageYOffset);
+  const prevCurrentScrollY = usePrevious(currentScrollY);
   const [fixedHeaderRef, isFixedHeaderHovered] = useFixedHeaderHover();
 
   const scrollListener = e => {
-    setCurrentPageYOffset(window.pageYOffset);
+    setCurrentScrollY(window.scrollY);
   };
 
   useEffect(() => {
     if (showFixedHeader) {
-      if (prevCurrentPageYOffset > currentPageYOffset) {
+      if (prevCurrentScrollY > currentScrollY) {
         setSlideFixedHeader(true);
       }
     }
-  }, [showFixedHeader, prevCurrentPageYOffset, currentPageYOffset]);
+  }, [showFixedHeader, prevCurrentScrollY, currentScrollY]);
 
   useEffect(() => {
     window.addEventListener("scroll", scrollListener);
@@ -42,12 +40,12 @@ const Layout = (props) => {
   }, [slideFixedHeader, isFixedHeaderHovered]);
 
   useEffect(() => {
-    if (window.pageYOffset < 200) {
+    if (window.scrollY < 200) {
       setShowFixedHeader(false);
     } else {
       setShowFixedHeader(true);
     }
-  }, [prevCurrentPageYOffset, currentPageYOffset]);
+  }, [prevCurrentScrollY, currentScrollY]);
 
   return (
     <main className={[styles.main, styles['main--' + mainBackground]].join(' ')}>

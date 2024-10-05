@@ -1,20 +1,11 @@
 .main {
-    font-family: FaktPro, Helvetica, sans-serif;
-    min-width: 320px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
-.main--white {
-    background: #fafafa;
-}
-
-.main--green {
-    background: #53ff8b;
-}
-
-.main--black {
-    background: #000000;
+.main--yellow {
+  background: #D3FF55;
 }

@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 
-const useBackground = ({ setBackground, color }) => {
+const useBackground = ({ setMainBackground, color }) => {
     useEffect(() => {
-        setBackground(color);
+        setMainBackground(color);
         window.scrollTo(0, 0);
-    }, [setBackground, color]);
+    }, [setMainBackground, color]);
 }
 
 export default useBackground;

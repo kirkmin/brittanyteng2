@@ -1,61 +1,82 @@
 .home {
-    flex: 1 1 100%;
-    margin: 0 auto;
-    padding: 20px 4.2% 80px;
-    display: flex;
-    flex-direction: column;
+  flex: 1 1 100%;
+  width: 100%;
+  padding: 26px 22px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.home__section.section--left {
-    display: none;
+.home__image-wrapper {
+  flex: 1 1 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 44px;
 }
 
-.home__paragraph {
-    font-size: 19px;
-    color: #000000;
-    letter-spacing: -0.38px;
-    line-height: 23px;
-    margin: 0 0 40px;
+.home__image-wrapper img {
+  width: 100%;
+}
+
+.home__text-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 21px;
+}
+
+.home__text-container p {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.16px;
+}
+
+.home__text-container p a {
+  color: #000;
+  text-decoration: none;
+}
+
+.home__text-container p span {
+  display: inline;
+}
+
+@media only screen and (min-width: 450px) {
+	.home__image-wrapper {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .home__text-container p span {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+	.home__text-container {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .home {
-        flex-direction: row;
-    }
+  .home {
+    padding: 28px 26px;
+  }
 
-    .home__section.section--left {
-        flex: 1 1 41%;
-        margin-right: 7%;
-        display: flex;
-        align-items: flex-end;
-    }
-
-    .home__section.section--right {
-        flex: 1 1 52%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .home__paragraph {
-        margin: -100px 20% 0 0;
-        padding-bottom: 50px;
-        z-index: 1;
-        font-size: 24px;
-        letter-spacing: -0.48px;
-        line-height: 28px;
-    }
-
-    .home__links-container {
-        display: grid;
-        grid-gap: 22px 69px;
-    }
+  .home__text-container p span {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-    .home__links-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 42px 69px;
-    }
+  .home__text-container p {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
 }

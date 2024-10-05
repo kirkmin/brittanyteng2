@@ -1,36 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import styles from './Header.module.css';
-import { ReactComponent as HappyFace } from '../../assets/images/happy_face.svg';
 import classNames from "classnames/bind";
+import styles from './Header.module.css';
 
 let cx = classNames.bind(styles);
 
-const FixedHeader = props => {
+const FixedHeader = ({ background, fixedSlide, fixedShow }) => {
   const classes = cx({
     "header": true,
     "header--fixed": true,
-    "header--white": props.background === "white",
-    "header--green": props.background === "green",
-    "header--black": props.background === "black",
-    "header--fixed-slide": props.fixedSlide,
-    "header--fixed-show": props.fixedShow
+    [`header--${background}`]: background,
+    "header--white-text": ["dog", "brown", "black"].includes(background),
+    "header--fixed-slide": fixedSlide,
+    "header--fixed-show": fixedShow
   });
 
   return (
-    <header className={classes} ref={props.refCallback}>
-      <div className={[styles['header__link__container'], styles['container--home']].join(' ')}>
-        <Link to="/" className={styles['header__link']}>
-          <div className={styles['header__link__content']}>B</div>
-          <div className={[styles['header__link__content'], styles['content--teng']].join(' ')}>TENG</div>
-        </Link>
-      </div>
-      <div className={styles['header__icon-container']}>
-        <Link to="happy" className={styles['header__link']}>
-          <HappyFace />
-        </Link>
-      </div>
+    <header className={classes}>
+      <nav className={styles["header__nav"]}>
+        <Link to="/" className={styles['header__nav__link']}>Brittany Teng</Link>
+        <div className={styles['header__nav__link-container']}>
+          <Link to="/" className={styles['header__nav__link']}>Work</Link>
+          <Link to="/" className={styles['header__nav__link']}>Not work</Link>
+        </div>
+      </nav>
     </header>
   );
 };
