@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
+    "embla-carousel-react": "^8.3.0",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
     "react-router": "^5.1.1",

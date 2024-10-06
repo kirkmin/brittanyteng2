@@ -1,0 +1,16 @@
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 24px;
+}
+
+.carousel__container {
+  display: flex;
+  gap: 24px;
+}
+
+.carousel__slide {
+  flex: 0 0 491px;
+  width: 491px;
+  position: relative;
+}

@@ -17,7 +17,7 @@ const Header = ({ background }) => {
       <nav className={styles["header__nav"]}>
         <Link to="/" className={styles['header__nav__link']}>Brittany Teng</Link>
         <div className={styles['header__nav__link-container']}>
-          <Link to="/" className={styles['header__nav__link']}>Work</Link>
+          <Link to="/work" className={styles['header__nav__link']}>Work</Link>
           <Link to="/notwork" className={styles['header__nav__link']}>Not work</Link>
         </div>
       </nav>

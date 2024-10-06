@@ -1,0 +1,13 @@
+.work {
+  flex: 1 1 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 34px 20px 40px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .work {
+    padding: 0 0 24px;
+  }
+}

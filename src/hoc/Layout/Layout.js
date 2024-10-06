@@ -14,11 +14,18 @@ const Layout = (props) => {
 
   const prevCurrentScrollY = usePrevious(currentScrollY);
   const [fixedHeaderRef, isFixedHeaderHovered] = useFixedHeaderHover();
+
   usePrefetch([
     '../../images/Home/Me.png',
     '../../images/NotWork/DogMobile.png',
     '../../images/NotWork/DogTablet.png',
     '../../images/NotWork/DogDesktop.png',
+    '../../assets/images/Work/WeightTracker.png',
+    '../../assets/images/Work/MedicationReminder.png',
+    '../../assets/images/Work/SubManagement.png',
+    '../../assets/images/Work/AppleTV.png',
+    '../../assets/images/Work/Nike.png',
+    '../../assets/images/Work/TheDaily.png',
   ]);
 
   const scrollListener = e => {
@@ -57,11 +64,9 @@ const Layout = (props) => {
 
   return (
     <main className={[styles.main, styles['main--' + mainBackground]].join(' ')}>
-      <div className={styles.content}>
-        <Header background={mainBackground} />
-        <FixedHeader background={mainBackground} fixedSlide={slideFixedHeader} fixedShow={showFixedHeader} refCallback={fixedHeaderRef} />
-        {props.children(setMainBackground)}
-      </div>
+      <Header background={mainBackground} />
+      <FixedHeader background={mainBackground} fixedSlide={slideFixedHeader} fixedShow={showFixedHeader} refCallback={fixedHeaderRef} />
+      {props.children(setMainBackground)}
     </main>
   );
 };

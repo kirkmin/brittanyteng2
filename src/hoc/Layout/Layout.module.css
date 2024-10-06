@@ -7,14 +7,6 @@
   box-sizing: border-box;
 }
 
-.content {
-  flex: 1 1 100%;
-  width: 100%;
-  max-width: 1440px;
-  display: flex;
-  flex-direction: column;
-}
-
 .main--yellow {
   background: #D3FF55;
 }
