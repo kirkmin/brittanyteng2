@@ -1,9 +1,3 @@
-import useBackground from '../../hooks/useBackground';
+import withBackground from '../../hoc/withBackground/withBackground';
 
-const NotWork = ({ setMainBackground }) => {
-  useBackground({ setMainBackground, color: 'dog' });
-
-  return null;
-};
-
-export default NotWork;
+export default withBackground(() => null, 'dog');

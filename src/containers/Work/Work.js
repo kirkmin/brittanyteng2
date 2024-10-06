@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import useBackground from '../../hooks/useBackground';
+import withBackground from '../../hoc/withBackground/withBackground';
 import CardRows from '../../components/UI/Card/CardRows/CardRows';
 import CardCarousel from '../../components/UI/Card/CardCarousel/CardCarousel';
 import styles from './Work.module.css';
@@ -41,8 +41,7 @@ const cardsData = [
 
 const breakpoint = 600;
 
-const Work = ({ setMainBackground }) => {
-  useBackground({ setMainBackground, color: 'yellow' });
+const Work = () => {
   const [isCarousel, setIsCarousel] = useState(false);
 
   useEffect(() => {
@@ -64,4 +63,4 @@ const Work = ({ setMainBackground }) => {
   )
 }
 
-export default Work;
+export default withBackground(Work, 'yellow');
